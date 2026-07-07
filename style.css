@@ -81,6 +81,11 @@ input, textarea, select { font-family: inherit; }
   line-height: 1;
   flex-shrink: 0;
 }
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
 .logo-absolute {
   font-family: var(--font-main);
   font-weight: 800;
