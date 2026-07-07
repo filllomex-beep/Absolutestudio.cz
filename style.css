@@ -487,14 +487,14 @@ input, textarea, select { font-family: inherit; }
 /* ===== TEAM GRID PREVIEW ===== */
 .team-grid-preview {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
   margin-bottom: 2rem;
 }
 .team-card {
   background: white;
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1.25rem;
   text-align: center;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
@@ -1144,6 +1144,7 @@ input, textarea, select { font-family: inherit; }
   .benefits-grid { grid-template-columns: repeat(2, 1fr); }
   .health-pillars { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .team-grid-preview { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 }
 
 @media (max-width: 768px) {
