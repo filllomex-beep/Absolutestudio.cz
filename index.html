@@ -1,1401 +1,1521 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABSOLUTE studio – Každý může být TVŮRCEM | Čáslav</title>
-  <meta name="description" content="ABSOLUTE studio v Čáslavi – revoluční EMS trénink s technologií Justfit, kryolipolýza, koncept zdraví na buněčné úrovni. Každý může být TVŮRCEM.">
-  <meta name="keywords" content="EMS, elektrosvalová stimulace, Justfit, kryolipolýza, Čáslav, fitness, wellness, Klára Slabihoudová, MISP">
+  <meta name="description"
+    content="ABSOLUTE studio v Čáslavi – EMS trénink s technologií Justfit, kryolipolýza, koncept zdraví na buněčné úrovni. Každý může být TVŮRCEM.">
+  <meta name="keywords"
+    content="EMS, elektrosvalová stimulace, Justfit, kryolipolýza, Čáslav, fitness, wellness, Klára Slabihoudová, MISP">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<header class="navbar" id="navbar">
-  <div class="nav-inner container">
-    <a href="#uvod" class="logo" onclick="showPage('uvod')">
-      <span class="logo-absolute">ABSOLUTE</span>
-      <span class="logo-studio">studio</span>
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#" onclick="showPage('uvod')" class="nav-link active" data-page="uvod">Úvod</a>
-      <a href="#" onclick="showPage('onas')" class="nav-link" data-page="onas">O nás</a>
-      <a href="#" onclick="showPage('lekce')" class="nav-link" data-page="lekce">Lekce EMS</a>
-      <a href="#" onclick="showPage('kryo')" class="nav-link nav-link-new" data-page="kryo">Kryolipolýza ✦</a>
-      <a href="#" onclick="showPage('zdravi')" class="nav-link" data-page="zdravi">Koncept zdraví</a>
-      <a href="#" onclick="showPage('misp')" class="nav-link" data-page="misp">MISP & Co</a>
-      <a href="#" onclick="showPage('cenik')" class="nav-link" data-page="cenik">Ceník</a>
-      <a href="#" onclick="showPage('kontakt')" class="nav-link" data-page="kontakt">Kontakt</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#uvod" class="logo" onclick="showPage('uvod')">
+        <span class="logo-absolute">ABSOLUTE</span>
+        <span class="logo-studio">studio</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#" onclick="showPage('uvod')" class="nav-link active" data-page="uvod">Úvod</a>
+        <a href="#" onclick="showPage('onas')" class="nav-link" data-page="onas">O nás</a>
+        <a href="#" onclick="showPage('lekce')" class="nav-link" data-page="lekce">Lekce EMS</a>
+        <a href="#" onclick="showPage('kryo')" class="nav-link nav-link-new" data-page="kryo">Kryolipolýza ✦</a>
+        <a href="#" onclick="showPage('zdravi')" class="nav-link" data-page="zdravi">Koncept zdraví</a>
+        <a href="#" onclick="showPage('misp')" class="nav-link" data-page="misp">MISP & Co</a>
+        <a href="#" onclick="showPage('cenik')" class="nav-link" data-page="cenik">Ceník</a>
+        <a href="#" onclick="showPage('kontakt')" class="nav-link" data-page="kontakt">Kontakt</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE: ÚVOD ===== -->
+  <div id="page-uvod" class="page active">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img
+          src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000151-daea5daea6/2022_06_01_23_16_15_878.jpg?ph=bfae52bc36"
+          alt="ABSOLUTE studio" class="hero-img">
+        <div class="hero-overlay"></div>
+        <!-- Smooth Vector Circle Overlay -->
+        <svg class="hero-circle-overlay" viewBox="0 0 1080 1080" preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="540" cy="540" r="270" stroke="rgba(255, 255, 255, 0.95)" stroke-width="11" fill="transparent" />
+        </svg>
+      </div>
+      <div class="hero-content container">
+        <span class="hero-tag">Čáslav · Pražská 1081</span>
+        <h1 class="hero-title">ABSOLUTE<br><em>studio</em></h1>
+        <p class="hero-motto">Každý může být <strong>TVŮRCEM</strong></p>
+        <p class="hero-sub">Revoluční EMS trénink s bezdrátovou technologií Justfit.<br>Cvičení budoucnosti je tady –
+          pro každého.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" onclick="showPage('lekce')">Zjistit více o EMS</button>
+          <button class="btn btn-outline" onclick="showPage('kontakt')">Rezervovat lekci</button>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-num">20<span class="stat-unit">min</span></span>
+            <span class="stat-label">= 90 min klasického cvičení</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">70<span class="stat-unit">let</span></span>
+            <span class="stat-label">EMS v medicíně</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">98<span class="stat-unit">%</span></span>
+            <span class="stat-label">klientů doporučuje</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">1<span class="stat-unit">×</span></span>
+            <span class="stat-label">týdně stačí</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O studiu preview -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="split-layout">
+          <div class="split-text fade-in">
+            <span class="section-tag">O studiu</span>
+            <h2 class="section-title">Cvičení<br>budoucnosti</h2>
+            <p class="section-text">ABSOLUTE studio bylo otevřeno v říjnu 2018 v Čáslavi. Dnes využíváme nejmodernější
+              bezdrátovou EMS technologii <strong>Justfit</strong> – průkopníka svobodného pohybu při EMS tréninku.</p>
+            <p class="section-text">Celým cvičením Vás provází <strong>kvalifikovaný lektor/trenér</strong>, který klade
+              důraz na maximální užitek a dokonalý komfort. Trénink je přizpůsoben Vaší aktuální fyzické kondici a
+              stanoveným cílům.</p>
+            <button class="btn btn-primary" onclick="showPage('lekce')">Více o tréninku</button>
+          </div>
+          <div class="split-image fade-in">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000222-40c5f40c61/how.png?ph=bfae52bc36"
+              alt="EMS trénink - jak to funguje" class="rounded-img bg-white-padding">
+            <div class="image-badge">
+              <span class="badge-icon">⚡</span>
+              <span class="badge-text">Justfit<br>bezdrátová technologie</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nová služba – Kryolipolýza -->
+    <section class="section kryo-preview">
+      <div class="kryo-bg-gradient"></div>
+      <div class="container">
+        <div class="kryo-preview-inner">
+          <div class="kryo-preview-text fade-in">
+            <span class="section-tag tag-white">Nová služba</span>
+            <h2 class="section-title white">Kryolipolýza</h2>
+            <p class="section-text white">Odbourávání tuku chladem – neinvazivní, bezbolestná a efektivní metoda
+              tvarování těla bez chirurgického zákroku. Výsledky jsou trvalé.</p>
+            <ul class="kryo-benefits-list">
+              <li>✓ Neinvazivní – žádné operace</li>
+              <li>✓ Bez rekonvalescence</li>
+              <li>✓ Trvalé výsledky</li>
+              <li>✓ Ošetření v délce 30–60 minut</li>
+            </ul>
+            <button class="btn btn-white" onclick="showPage('kryo')">Zjistit více</button>
+          </div>
+          <div class="kryo-preview-image fade-in">
+            <img src="img_cryo.png" alt="Kryolipolýza" class="rounded-img kryo-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tým preview -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Náš tým</span>
+          <h2 class="section-title">Lidé za ABSOLUTE</h2>
+          <p class="section-subtitle">Profesionálové, kteří se starají o Vaše zdraví a výsledky</p>
+        </div>
+        <div class="team-grid-preview">
+          <div class="team-card fade-in">
+            <div class="team-avatar">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000224-e1641e1643/me_1.jpeg?ph=bfae52bc36"
+                alt="Bc. Klára Slabihoudová"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="avatar-fallback" style="display:none">KS</div>
+            </div>
+            <h3 class="team-name">Bc. Klára Slabihoudová</h3>
+            <p class="team-role">Majitelka & hlavní EMS lektorka</p>
+          </div>
+          <div class="team-card fade-in">
+            <div class="team-avatar">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000180-ef129ef12c/IMG_20211227_174642.jpg?ph=bfae52bc36"
+                alt="Mgr. Pavel Slabihoud"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="avatar-fallback" style="display:none">PS</div>
+            </div>
+            <h3 class="team-name">Mgr. Pavel Slabihoud</h3>
+            <p class="team-role">Trenér EMS & pedagog TV</p>
+          </div>
+          <div class="team-card fade-in">
+            <div class="team-avatar">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000228-6e5fb6e5fc/Marta.jpeg?ph=bfae52bc36"
+                alt="Martina Zadražilová"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="avatar-fallback" style="display:none">MZ</div>
+            </div>
+            <h3 class="team-name">Martina Zadražilová</h3>
+            <p class="team-role">Lektorka EMS & koordinátorka</p>
+          </div>
+        </div>
+        <div class="section-cta fade-in">
+          <button class="btn btn-secondary" onclick="showPage('onas')">Poznat celý tým</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner fade-in">
+          <h2 class="cta-title">Připraveni stát se TVŮRCEM?</h2>
+          <p class="cta-sub">Rezervujte si první zkušební lekci EMS nebo konzultaci kryolipolýzy.</p>
+          <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Rezervovat první lekci</button>
+        </div>
+      </div>
+    </section>
+
   </div>
-</header>
 
-<!-- ===== PAGE: ÚVOD ===== -->
-<div id="page-uvod" class="page active">
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000151-daea5daea6/2022_06_01_23_16_15_878.jpg?ph=bfae52bc36" alt="ABSOLUTE studio" class="hero-img">
-      <div class="hero-overlay"></div>
-      <!-- Smooth Vector Circle Overlay -->
-      <svg class="hero-circle-overlay" viewBox="0 0 1080 1080" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="540" cy="540" r="270" stroke="rgba(255, 255, 255, 0.95)" stroke-width="11" fill="transparent" />
-      </svg>
-    </div>
-    <div class="hero-content container">
-      <span class="hero-tag">Čáslav · Pražská 1081</span>
-      <h1 class="hero-title">ABSOLUTE<br><em>studio</em></h1>
-      <p class="hero-motto">Každý může být <strong>TVŮRCEM</strong></p>
-      <p class="hero-sub">Revoluční EMS trénink s bezdrátovou technologií Justfit.<br>Cvičení budoucnosti je tady – pro každého.</p>
-      <div class="hero-ctas">
-        <button class="btn btn-primary" onclick="showPage('lekce')">Zjistit více o EMS</button>
-        <button class="btn btn-outline" onclick="showPage('kontakt')">Rezervovat lekci</button>
+  <!-- ===== PAGE: O NÁS ===== -->
+  <div id="page-onas" class="page">
+    <section class="page-hero page-hero-small">
+      <div class="page-hero-content container">
+        <span class="section-tag tag-white">Naše studio</span>
+        <h1 class="page-hero-title">O nás & Tým</h1>
+        <p class="page-hero-sub">Tři nadšenci, jeden cíl – Vaše zdraví a pohoda</p>
       </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-dot"></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Stats Strip -->
-  <section class="stats-strip">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-num">20<span class="stat-unit">min</span></span>
-          <span class="stat-label">= 90 min klasického cvičení</span>
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Náš příběh</h2>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">70<span class="stat-unit">let</span></span>
-          <span class="stat-label">EMS v medicíně</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">98<span class="stat-unit">%</span></span>
-          <span class="stat-label">klientů doporučuje</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">1<span class="stat-unit">×</span></span>
-          <span class="stat-label">týdně stačí</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- O studiu preview -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="split-layout">
-        <div class="split-text fade-in">
-          <span class="section-tag">O studiu</span>
-          <h2 class="section-title">Cvičení<br>budoucnosti</h2>
-          <p class="section-text">ABSOLUTE studio bylo otevřeno v říjnu 2018 v Čáslavi. Dnes využíváme nejmodernější bezdrátovou EMS technologii <strong>Justfit</strong> – průkopníka svobodného pohybu při EMS tréninku.</p>
-          <p class="section-text">Celým cvičením Vás provází <strong>kvalifikovaný lektor/trenér</strong>, který klade důraz na maximální užitek a dokonalý komfort. Trénink je přizpůsoben Vaší aktuální fyzické kondici a stanoveným cílům.</p>
-          <button class="btn btn-primary" onclick="showPage('lekce')">Více o tréninku</button>
-        </div>
-        <div class="split-image fade-in">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000222-40c5f40c61/how.png?ph=bfae52bc36" alt="EMS trénink - jak to funguje" class="rounded-img bg-white-padding">
-          <div class="image-badge">
-            <span class="badge-icon">⚡</span>
-            <span class="badge-text">Justfit<br>bezdrátová technologie</span>
+        <div class="split-layout fade-in">
+          <div class="split-text">
+            <p class="section-text"><strong>ABSOLUTE studio</strong> bylo otevřeno v říjnu roku 2018 v srdci Čáslavi.
+              Vzniklo z touhy přinést lidem nejmodernější a nejefektivnější způsob cvičení – elektrosvalovou stimulaci
+              (EMS).</p>
+            <p class="section-text">Od počátku jsme využívali špičkové přístroje a neustále se vzdělávali. Dnes hrdě
+              pracujeme s bezdrátovou technologií <strong>Justfit</strong> – průkopníkem svobody pohybu v EMS světě.</p>
+            <p class="section-text">Naším mottem je: <em>„Každý může být TVŮRCEM."</em> Věříme, že každý člověk má v
+              sobě potenciál změnit svůj život. My jsme tady, abychom vám pomohli tento potenciál probudit.</p>
+            <blockquote class="studio-quote">"Naučte se svůj život řídit sami, klíč držíte v ruce po celý život."
+            </blockquote>
+          </div>
+          <div class="split-image">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000234-7ae147ae16/justfit-hero-professional-ems-training-suit.jpeg.png?ph=bfae52bc36"
+              alt="Justfit EMS oblek" class="rounded-img">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Nová služba – Kryolipolýza -->
-  <section class="section kryo-preview">
-    <div class="kryo-bg-gradient"></div>
-    <div class="container">
-      <div class="kryo-preview-inner">
-        <div class="kryo-preview-text fade-in">
-          <span class="section-tag tag-white">Nová služba</span>
-          <h2 class="section-title white">Kryolipolýza</h2>
-          <p class="section-text white">Odbourávání tuku chladem – neinvazivní, bezbolestná a efektivní metoda tvarování těla bez chirurgického zákroku. Výsledky jsou trvalé.</p>
-          <ul class="kryo-benefits-list">
-            <li>✓ Neinvazivní – žádné operace</li>
-            <li>✓ Bez rekonvalescence</li>
-            <li>✓ Trvalé výsledky</li>
-            <li>✓ Ošetření v délce 30–60 minut</li>
-          </ul>
-          <button class="btn btn-white" onclick="showPage('kryo')">Zjistit více</button>
+    <!-- Tým -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Náš tým</span>
+          <h2 class="section-title">Seznamte se s námi</h2>
         </div>
-        <div class="kryo-preview-image fade-in">
-          <img src="img_cryo.png" alt="Kryolipolýza" class="rounded-img kryo-img">
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="team-detail-grid">
 
-  <!-- Tým preview -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Náš tým</span>
-        <h2 class="section-title">Lidé za ABSOLUTE</h2>
-        <p class="section-subtitle">Profesionálové, kteří se starají o Vaše zdraví a výsledky</p>
-      </div>
-      <div class="team-grid-preview">
-        <div class="team-card fade-in">
-          <div class="team-avatar">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000224-e1641e1643/me_1.jpeg?ph=bfae52bc36" alt="Bc. Klára Slabihoudová" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="avatar-fallback" style="display:none">KS</div>
-          </div>
-          <h3 class="team-name">Bc. Klára Slabihoudová</h3>
-          <p class="team-role">Majitelka & hlavní EMS lektorka</p>
-        </div>
-        <div class="team-card fade-in">
-          <div class="team-avatar">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000180-ef129ef12c/IMG_20211227_174642.jpg?ph=bfae52bc36" alt="Mgr. Pavel Slabihoud" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="avatar-fallback" style="display:none">PS</div>
-          </div>
-          <h3 class="team-name">Mgr. Pavel Slabihoud</h3>
-          <p class="team-role">Trenér EMS & pedagog TV</p>
-        </div>
-        <div class="team-card fade-in">
-          <div class="team-avatar">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000228-6e5fb6e5fc/Marta.jpeg?ph=bfae52bc36" alt="Martina Zadražilová" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="avatar-fallback" style="display:none">MZ</div>
-          </div>
-          <h3 class="team-name">Martina Zadražilová</h3>
-          <p class="team-role">Lektorka EMS & koordinátorka</p>
-        </div>
-      </div>
-      <div class="section-cta fade-in">
-        <button class="btn btn-secondary" onclick="showPage('onas')">Poznat celý tým</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-inner fade-in">
-        <h2 class="cta-title">Připraveni stát se TVŮRCEM?</h2>
-        <p class="cta-sub">Rezervujte si první zkušební lekci EMS nebo konzultaci kryolipolýzy.</p>
-        <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Rezervovat první lekci</button>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-<!-- ===== PAGE: O NÁS ===== -->
-<div id="page-onas" class="page">
-  <section class="page-hero page-hero-small">
-    <div class="page-hero-content container">
-      <span class="section-tag tag-white">Naše studio</span>
-      <h1 class="page-hero-title">O nás & Tým</h1>
-      <p class="page-hero-sub">Tři nadšenci, jeden cíl – Vaše zdraví a pohoda</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">Náš příběh</h2>
-      </div>
-      <div class="split-layout fade-in">
-        <div class="split-text">
-          <p class="section-text"><strong>ABSOLUTE studio</strong> bylo otevřeno v říjnu roku 2018 v srdci Čáslavi. Vzniklo z touhy přinést lidem nejmodernější a nejefektivnější způsob cvičení – elektrosvalovou stimulaci (EMS).</p>
-          <p class="section-text">Od počátku jsme využívali špičkové přístroje a neustále se vzdělávali. Dnes hrdě pracujeme s bezdrátovou technologií <strong>Justfit</strong> – průkopníkem svobody pohybu v EMS světě.</p>
-          <p class="section-text">Naším mottem je: <em>„Každý může být TVŮRCEM."</em> Věříme, že každý člověk má v sobě potenciál změnit svůj život. My jsme tady, abychom vám pomohli tento potenciál probudit.</p>
-          <blockquote class="studio-quote">"Naučte se svůj život řídit sami, klíč držíte v ruce po celý život."</blockquote>
-        </div>
-        <div class="split-image">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000234-7ae147ae16/justfit-hero-professional-ems-training-suit.jpeg.png?ph=bfae52bc36" alt="Justfit EMS oblek" class="rounded-img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tým -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Náš tým</span>
-        <h2 class="section-title">Seznamte se s námi</h2>
-      </div>
-      <div class="team-detail-grid">
-
-        <!-- Klára -->
-        <div class="team-detail-card fade-in">
-          <div class="team-detail-photo">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000224-e1641e1643/me_1.jpeg?ph=bfae52bc36" alt="Bc. Klára Slabihoudová" onerror="this.parentElement.innerHTML='<div class=\'avatar-large\'>KS</div>'">
-          </div>
-          <div class="team-detail-info">
-            <h3 class="team-detail-name">Bc. Klára Slabihoudová</h3>
-            <p class="team-detail-role">Majitelka studia & hlavní EMS lektorka</p>
-            <div class="team-detail-tags">
-              <span class="tag-chip">EMS lektor</span>
-              <span class="tag-chip">Porodní asistentka</span>
-              <span class="tag-chip">MISP instruktor</span>
-              <span class="tag-chip">Výživa na bun. úrovni</span>
-              <span class="tag-chip">Reflexní terapie</span>
+          <!-- Klára -->
+          <div class="team-detail-card fade-in">
+            <div class="team-detail-photo">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000224-e1641e1643/me_1.jpeg?ph=bfae52bc36"
+                alt="Bc. Klára Slabihoudová"
+                onerror="this.parentElement.innerHTML='<div class=\'avatar-large\'>KS</div>'">
             </div>
-            <p class="team-detail-bio">Registrovaná porodní asistentka, lektorka plavání těhotných, instruktorka programu MISP (Massage In Schools Programme) a fitness trenér. Specializuje se na výživu na buněčné úrovni podloženou testy a zkušenosti v oblasti snižování homocysteinu, zvyšování vitamínu D a reflexní terapie.</p>
-            <div class="team-mottos">
-              <p class="motto-label">Oblíbená motta:</p>
-              <p class="motto">"Kdo chce hledá způsob, kdo nechce hledá důvod."</p>
-              <p class="motto">"Limity jsou jen v naší hlavě – V co věříš, to tvoříš."</p>
-              <p class="motto">"My máme tu moc, užívejme si ji moudře."</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pavel -->
-        <div class="team-detail-card fade-in">
-          <div class="team-detail-photo">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000180-ef129ef12c/IMG_20211227_174642.jpg?ph=bfae52bc36" alt="Mgr. Pavel Slabihoud" onerror="this.parentElement.innerHTML='<div class=\'avatar-large\'>PS</div>'">
-          </div>
-          <div class="team-detail-info">
-            <h3 class="team-detail-name">Mgr. Pavel Slabihoud</h3>
-            <p class="team-detail-role">Trenér EMS & pedagog tělesné výchovy</p>
-            <div class="team-detail-tags">
-              <span class="tag-chip">Trenér EMS</span>
-              <span class="tag-chip">Pedagog TV</span>
-              <span class="tag-chip">Sportovní trenér</span>
-              <span class="tag-chip">Pořadatel akcí</span>
-            </div>
-            <p class="team-detail-bio">Pedagog tělesné výchovy, lektor plavání, lyžování a snowboardingu, sportovní trenér na teambuildingových projektech. Pořadatel celoročních sportovních akcí – příměstské tábory, sportovní dny, volejbalové turnaje a paddleboardové závody. Trenér cvičení pomocí metody EMS.</p>
-            <div class="team-mottos">
-              <p class="motto-label">Oblíbené motto:</p>
-              <p class="motto">"Co nemáš, nepotřebuješ."</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Martina -->
-        <div class="team-detail-card fade-in">
-          <div class="team-detail-photo">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000228-6e5fb6e5fc/Marta.jpeg?ph=bfae52bc36" alt="Martina Zadražilová" onerror="this.parentElement.innerHTML='<div class=\'avatar-large\'>MZ</div>'">
-          </div>
-          <div class="team-detail-info">
-            <h3 class="team-detail-name">Martina Zadražilová</h3>
-            <p class="team-detail-role">Lektorka EMS & koordinátorka akcí</p>
-            <div class="team-detail-tags">
-              <span class="tag-chip">Lektorka EMS</span>
-              <span class="tag-chip">Psychologie</span>
-              <span class="tag-chip">Reflexní terapie</span>
-              <span class="tag-chip">Koučování</span>
-            </div>
-            <p class="team-detail-bio">Maminka „full time", která ví, jak jsou čas a zdraví vzácné. Koordinátorka svatebních a narozeninových akcí, designérka. Úklid a harmonizace prostoru je její vášní. Vystudovala 3 roky zájmové studium psychologie, prošla kurzem reflexní terapie a momentálně intenzivně studuje koučování.</p>
-            <div class="team-mottos">
-              <p class="motto-label">Oblíbená motta:</p>
-              <p class="motto">"Sedmkrát upadneš, osmkrát vstaň."</p>
-              <p class="motto">"Inspirace, kterou hledáš, je v Tobě."</p>
-              <p class="motto">"Co odešleš, to se ti vrátí."</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== PAGE: LEKCE EMS ===== -->
-<div id="page-lekce" class="page">
-  <section class="page-hero page-hero-small">
-    <div class="page-hero-content container">
-      <span class="section-tag tag-white">Technologie & Benefity</span>
-      <h1 class="page-hero-title">Lekce & Benefity EMS</h1>
-      <p class="page-hero-sub">Revoluční elektrosvalová stimulace s technologií Justfit</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-      <div class="split-layout fade-in">
-        <div class="split-text">
-          <span class="section-tag">Co je EMS?</span>
-          <h2 class="section-title">Electro Myo Stimulace</h2>
-          <p class="section-text">EMS (Electro Myo Stimulace) – elektrosvalová stimulace – se využívá již <strong>70 let v medicíně</strong> k rehabilitačním účelům a je využívána také profesionálními sportovci k dosažení lepších výkonů.</p>
-          <p class="section-text">Využívá se revoluční elektrosvalová stimulace, kdy dochází k aktivaci svalstva i z vnějšku, <strong>přirozenou kontrakcí svalu</strong>. Výsledkem je mimořádně efektivní trénink celého těla.</p>
-          <p class="section-text">Díky bezdrátové technologii <strong>Justfit</strong> máte plnou svobodu pohybu – žádné kabely, žádné omezení. Trénujete přirozeně, komfortně a efektivně.</p>
-        </div>
-        <div class="split-image">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000232-3be4c3be4e/700/benefity_Justfit.png?ph=bfae52bc36" alt="Benefity Justfit EMS" class="rounded-img bg-white-padding">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Jak to funguje -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Postup</span>
-        <h2 class="section-title">Jak probíhá lekce?</h2>
-      </div>
-      <div class="steps-grid fade-in">
-        <div class="step-card">
-          <div class="step-number">01</div>
-          <h3 class="step-title">Konzultace</h3>
-          <p class="step-text">Při první návštěvě proberete s lektorem Vaše cíle, zdravotní stav a možnosti. Lekce je vždy individuálně přizpůsobená.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">02</div>
-          <h3 class="step-title">Oblečení EMS obleček</h3>
-          <p class="step-text">Navléknete si speciální EMS obleček Justfit, který snímá svalové skupiny celého těla. Bezdrátová technologie – maximální volnost pohybu.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">03</div>
-          <h3 class="step-title">20 minut tréninku</h3>
-          <p class="step-text">Celý trénink trvá pouhých 20 minut, ale odpovídá intenzitou 90 minutům klasického cvičení. Lektor Vás celou dobu vede a motivuje.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">04</div>
-          <h3 class="step-title">Výsledky</h3>
-          <p class="step-text">Výsledky jsou viditelné již po prvních lekcích. Stačí cvičit 1× týdně pro dosažení trvalých změn v kondici, síle a postavě.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefity -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Výhody</span>
-        <h2 class="section-title">Benefity EMS tréninku</h2>
-      </div>
-      <div class="benefits-grid fade-in">
-        <div class="benefit-card">
-          <div class="benefit-icon">💪</div>
-          <h3>Posílení svalů</h3>
-          <p>Aktivace až 90 % svalových vláken – výrazně více než při klasickém cvičení.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">⚡</div>
-          <h3>Časová efektivita</h3>
-          <p>20 minut = 90 min klasického tréninku. Ideální pro zaneprázdněné lidi.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🎯</div>
-          <h3>Hubnutí & tvarování</h3>
-          <p>Spalování tuků, tvarování problematických partií, zpevnění celého těla.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🦴</div>
-          <h3>Rehabilitace</h3>
-          <p>Úleva od bolestí zad, posílení pánevního dna, vhodné pro maminky po porodu.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🧬</div>
-          <h3>Sportovní výkon</h3>
-          <p>Využíváno vrcholovými sportovci pro zlepšení kondice a sportovních výsledků.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🌿</div>
-          <h3>Přirozené cvičení</h3>
-          <p>EMS nevytváří umělý pohyb – aktivuje svaly přirozenou kontrakcí. Bezpečné.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🤱</div>
-          <h3>Pro každého</h3>
-          <p>Vhodné pro seniory, maminky, aktivní sportovce i lidi bez předchozích zkušeností.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">📡</div>
-          <h3>Bezdrátová Justfit</h3>
-          <p>Nejmodernější technologie bez kabelu pro maximální komfort a svobodu pohybu.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fotogalerie z tréninků -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Jak to u nás vypadá</span>
-        <h2 class="section-title">Fotogalerie z EMS tréninků</h2>
-        <p class="section-subtitle">Pohledy přímo do našeho studia v Čáslavi</p>
-      </div>
-      <div class="gallery-grid fade-in">
-        <div class="gallery-item">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000242-b4860b4862/me_4.jpeg?ph=bfae52bc36" alt="EMS trénink - ukázka cviku" class="gallery-img">
-        </div>
-        <div class="gallery-item">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000244-4ecb94ecbb/me_5.jpeg?ph=bfae52bc36" alt="EMS cvičení s lektorem" class="gallery-img">
-        </div>
-        <div class="gallery-item">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000236-57d6857d69/me_6.jpeg?ph=bfae52bc36" alt="EMS bezdrátový trénink Justfit" class="gallery-img">
-        </div>
-        <div class="gallery-item">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000238-4126e4126f/me_7.jpeg?ph=bfae52bc36" alt="Individuální EMS trénink" class="gallery-img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-inner fade-in">
-        <h2 class="cta-title">Vyzkoušejte EMS na vlastní kůži</h2>
-        <p class="cta-sub">Rezervujte si první lekci a přesvědčte se sami.</p>
-        <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Rezervovat lekci</button>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== PAGE: KRYOLIPOLÝZA ===== -->
-<div id="page-kryo" class="page">
-  <section class="page-hero page-hero-kryo">
-    <div class="page-hero-bg">
-      <img src="img_cryo.png" alt="Kryolipolýza" class="page-hero-bg-img">
-      <div class="page-hero-overlay kryo-overlay"></div>
-    </div>
-    <div class="page-hero-content container">
-      <span class="section-tag tag-blue">Nová služba 2024</span>
-      <h1 class="page-hero-title">Kryolipolýza</h1>
-      <p class="page-hero-sub">Odbourávání tuku chladem – neinvazivní, bezpečné, trvalé</p>
-      <button class="btn btn-white" onclick="showPage('kontakt')">Objednat konzultaci zdarma</button>
-    </div>
-  </section>
-
-  <!-- Co je kryolipolýza -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="split-layout fade-in">
-        <div class="split-text">
-          <span class="section-tag">Inovativní metoda</span>
-          <h2 class="section-title">Co je kryolipolýza?</h2>
-          <p class="section-text">Kryolipolýza je <strong>neinvazivní estetická metoda</strong> tvarování těla, která využívá kontrolované chlazení k trvalému odbourávání tukových buněk. Metoda je vědecky ověřená a klinicky testovaná.</p>
-          <p class="section-text">Tukové buňky jsou citlivější na chlad než okolní tkáně. Při teplotě kolem <strong>-5°C až -10°C</strong> dochází k jejich přirozené apoptóze (buněčné smrti), zatímco kůže a okolní tkáně zůstávají nepoškozeny.</p>
-          <p class="section-text">Odumřelé tukové buňky jsou v průběhu 4–12 týdnů <strong>přirozeně odbourány lymfatickým systémem</strong> těla. Výsledky jsou trvalé – tukové buňky se nevracejí.</p>
-        </div>
-        <div class="split-image">
-          <img src="img_cryo.png" alt="Kryolipolýza ošetření" class="rounded-img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Jak to funguje - věda -->
-  <section class="section kryo-science-section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Věda za metodou</span>
-        <h2 class="section-title">Jak to funguje?</h2>
-      </div>
-      <div class="kryo-process fade-in">
-        <div class="kryo-process-step">
-          <div class="kryo-step-icon">❄️</div>
-          <h3>Přiložení aplikátoru</h3>
-          <p>Na problematickou oblast se přiloží speciální vakuový aplikátor, který šetrně nasaje kůži a tukovou tkáň.</p>
-        </div>
-        <div class="kryo-process-arrow">→</div>
-        <div class="kryo-process-step">
-          <div class="kryo-step-icon">🌡️</div>
-          <h3>Kontrolované chlazení</h3>
-          <p>Po dobu 30–60 minut se tkáň ochlazuje na přesně stanovenou teplotu. Tukové buňky krystalizují a přirozeně zanikají.</p>
-        </div>
-        <div class="kryo-process-arrow">→</div>
-        <div class="kryo-process-step">
-          <div class="kryo-step-icon">✨</div>
-          <h3>Přirozené odbourání</h3>
-          <p>Lymfatický systém odbouraná tukové buňky v průběhu 4–12 týdnů. Výsledek je viditelný a trvalý.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Výhody -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">Proč kryolipolýza?</h2>
-      </div>
-      <div class="kryo-advantages fade-in">
-        <div class="advantage-card">
-          <div class="advantage-icon">🚫</div>
-          <h3>Neinvazivní</h3>
-          <p>Žádné jehly, žádný skalpel, žádná anestezie. Metoda je zcela bezpečná a bez rizika jizev.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">🛋️</div>
-          <h3>Bezbolestná</h3>
-          <p>Během ošetření můžete relaxovat, číst nebo poslouchat hudbu. Procedura je příjemná a pohodlná.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">⏱️</div>
-          <h3>Bez rekonvalescence</h3>
-          <p>Po ošetření ihned pokračujete v normálním denním programu. Žádná omezení pohybu.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">📉</div>
-          <h3>Trvalé výsledky</h3>
-          <p>Tukové buňky jsou trvalé odstraněny. Výsledky jsou viditelné a při zdravém životním stylu trvalé.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">🎯</div>
-          <h3>Cílená redukce</h3>
-          <p>Přesné ošetření problematických partií – břicho, boky, stehna, záda, podbradek a další.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">🔬</div>
-          <h3>Vědecky ověřená</h3>
-          <p>Metoda je klinicky testovaná, vědecky podložená a schválená pro estetické ošetření.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pro koho -->
-  <section class="section">
-    <div class="container">
-      <div class="split-layout fade-in">
-        <div class="split-image">
-          <div class="kryo-device-showcase">
-            <img src="img_cryo.png" alt="Kryolipolýza přístroj" class="rounded-img">
-          </div>
-        </div>
-        <div class="split-text">
-          <span class="section-tag">Vhodnost</span>
-          <h2 class="section-title">Pro koho je kryolipolýza vhodná?</h2>
-          <div class="suitability-list">
-            <div class="suitability-item suitability-yes">
-              <span class="suit-icon">✓</span>
-              <div>
-                <strong>Lidé s lokálními tukovými zásobami</strong>
-                <p>Tuk na břichu, bocích, stehnech nebo zádech, který nejde odcvičit.</p>
+            <div class="team-detail-info">
+              <h3 class="team-detail-name">Bc. Klára Slabihoudová</h3>
+              <p class="team-detail-role">Majitelka studia & hlavní EMS lektorka</p>
+              <div class="team-detail-tags">
+                <span class="tag-chip">EMS lektor</span>
+                <span class="tag-chip">Porodní asistentka</span>
+                <span class="tag-chip">MISP instruktor</span>
+                <span class="tag-chip">Výživa na bun. úrovni</span>
+                <span class="tag-chip">Reflexní terapie</span>
               </div>
-            </div>
-            <div class="suitability-item suitability-yes">
-              <span class="suit-icon">✓</span>
-              <div>
-                <strong>Po porodu a hubnutí</strong>
-                <p>Dokonalé dotvarování těla po velkých změnách hmotnosti.</p>
-              </div>
-            </div>
-            <div class="suitability-item suitability-yes">
-              <span class="suit-icon">✓</span>
-              <div>
-                <strong>Aktivní lidé</strong>
-                <p>Cvičíte, ale určité partie neodpovídají Vašemu úsilí? Kryolipolýza pomůže.</p>
-              </div>
-            </div>
-            <div class="suitability-item suitability-no">
-              <span class="suit-icon suit-icon-no">✗</span>
-              <div>
-                <strong>Nevhodné při</strong>
-                <p>Těhotenství, kryoglobulinemii, výrazných onemocněních kůže v místě ošetření.</p>
+              <p class="team-detail-bio">Registrovaná porodní asistentka, lektorka plavání těhotných, instruktorka
+                programu MISP (Massage In Schools Programme) a fitness trenér. Specializuje se na výživu na buněčné
+                úrovni podloženou testy a zkušenosti v oblasti snižování homocysteinu, zvyšování vitamínu D a reflexní
+                terapie.</p>
+              <div class="team-mottos">
+                <p class="motto-label">Oblíbená motta:</p>
+                <p class="motto">"Kdo chce hledá způsob, kdo nechce hledá důvod."</p>
+                <p class="motto">"Limity jsou jen v naší hlavě – V co věříš, to tvoříš."</p>
+                <p class="motto">"My máme tu moc, užívejme si ji moudře."</p>
               </div>
             </div>
           </div>
-          <p class="section-text" style="margin-top: 1.5rem; font-style: italic;">Při konzultaci v našem studiu posoudíme, zda je kryolipolýza pro vás vhodná.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Průběh ošetření -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">U nás ve studiu</span>
-        <h2 class="section-title">Jak probíhá ošetření v ABSOLUTE studiu?</h2>
-      </div>
-      <div class="treatment-timeline fade-in">
-        <div class="timeline-item">
-          <div class="timeline-dot">1</div>
-          <div class="timeline-content">
-            <h3>Bezplatná konzultace</h3>
-            <p>Přijďte na konzultaci, kde posoudíme Vaše potřeby, vysvětlíme celý průběh a zodpovíme všechny otázky. Úplně zdarma.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">2</div>
-          <div class="timeline-content">
-            <h3>Fotodokumentace</h3>
-            <p>Pořídíme fotodokumentaci před ošetřením pro sledování výsledků.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">3</div>
-          <div class="timeline-content">
-            <h3>Samotné ošetření</h3>
-            <p>Příjemné 30–60minutové ošetření v pohodlné poloze. Můžete relaxovat nebo si přinést knihu.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">4</div>
-          <div class="timeline-content">
-            <h3>Sledování výsledků</h3>
-            <p>Výsledky se projevují postupně v průběhu 4–12 týdnů. Fotodokumentací sledujeme Váš pokrok.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">5</div>
-          <div class="timeline-content">
-            <h3>Případné další ošetření</h3>
-            <p>Na základě výsledků doporučíme, zda je vhodné ošetření zopakovat nebo ošetřit další partie.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">Časté otázky</h2>
-      </div>
-      <div class="faq-list fade-in">
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Bolí kryolipolýza?
-            <span class="faq-arrow">▾</span>
-          </button>
-          <div class="faq-answer">
-            <p>Kryolipolýza je bezbolestná. Při přiložení aplikátoru pocítíte táhnutí a intenzivní chlad, který po chvíli odeznívá. Většina klientů během procedury relaxuje nebo spí.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Kdy uvidím výsledky?
-            <span class="faq-arrow">▾</span>
-          </button>
-          <div class="faq-answer">
-            <p>Výsledky jsou viditelné postupně v průběhu 4–12 týdnů po ošetření. Plné výsledky se projeví zpravidla po 3 měsících, kdy lymfatický systém odbourá všechny zničené tukové buňky.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Kolik ošetření je potřeba?
-            <span class="faq-arrow">▾</span>
-          </button>
-          <div class="faq-answer">
-            <p>U většiny klientů stačí 1–3 ošetření na jednu oblast v závislosti na množství tuku a požadovaném výsledku. Konzultaci přesného počtu provedeme individuálně.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Jsou výsledky trvalé?
-            <span class="faq-arrow">▾</span>
-          </button>
-          <div class="faq-answer">
-            <p>Ano! Tukové buňky jsou jednou provždy odstraněny. Při zdravém životním stylu jsou výsledky trvalé. Zbývající tukové buňky se sice mohou zvětšit při přibírání, ale ošetřená oblast si zachovává příznivý tvar.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Jaké partie lze ošetřit?
-            <span class="faq-arrow">▾</span>
-          </button>
-          <div class="faq-answer">
-            <p>Nejčastěji se ošetřuje břicho, boky, stehna (vnitřní i vnější), záda (tzv. \"milenky\"), ramena a podbradek. Každou část posoudíme při konzultaci.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section cta-kryo">
-    <div class="container">
-      <div class="cta-inner fade-in">
-        <h2 class="cta-title">Začněte svou cestu k dokonalé postavě</h2>
-        <p class="cta-sub">Objednejte si bezplatnou konzultaci kryolipolýzy ještě dnes.</p>
-        <button class="btn btn-white btn-large" onclick="showPage('kontakt')">Konzultace zdarma</button>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== PAGE: KONCEPT ZDRAVÍ ===== -->
-<div id="page-zdravi" class="page">
-  <section class="page-hero page-hero-small">
-    <div class="page-hero-content container">
-      <span class="section-tag tag-white">Wellness & Výživa</span>
-      <h1 class="page-hero-title">Koncept zdraví</h1>
-      <p class="page-hero-sub">Zdraví na buněčné úrovni – základ trvalé vitaliy</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-      <div class="split-layout fade-in">
-        <div class="split-text">
-          <span class="section-tag">Filozofie zdraví</span>
-          <h2 class="section-title">Zdraví začíná uvnitř</h2>
-          <p class="section-text">V ABSOLUTE studiu věříme, že skutečné zdraví začíná na buněčné úrovni. Pohyb je skvělý základ, ale bez správné výživy a vnitřní rovnováhy nelze dosáhnout plného potenciálu.</p>
-          <p class="section-text">Naše majitelka Klára Slabihoudová se specializuje na <strong>výživu na buněčné úrovni podloženou testy</strong>. Umíme identifikovat nedostatky a nastavit konkrétní plán pro Vaše zdraví.</p>
-        </div>
-        <div class="split-image">
-          <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000204-426694266b/zinzino-ip-images-lifestyle-904172104.webp?ph=bfae52bc36" alt="Koncept zdraví - Zinzino Balance" class="rounded-img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pilíře zdraví -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Naše témata</span>
-        <h2 class="section-title">Pilíře zdravého života</h2>
-      </div>
-      <div class="health-pillars fade-in">
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🧬</div>
-          <h3 class="pillar-title">Výživa na buněčné úrovni</h3>
-          <p class="pillar-text">Každá buňka v těle potřebuje správné živiny, aby správně fungovala. Pomocí testů identifikujeme nedostatky a nastavíme individuální suplementaci a stravu přesně pro Vás.</p>
-          <div class="pillar-points">
-            <span>✓ Testy nutričního stavu</span>
-            <span>✓ Individuální plán</span>
-            <span>✓ Sledování pokroku</span>
-          </div>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🔴</div>
-          <h3 class="pillar-title">Snižování homocysteinu</h3>
-          <p class="pillar-text">Homocystein je aminokyselina, jejíž zvýšená hladina v krvi zvyšuje riziko kardiovaskulárních onemocnění, demence a dalších zdravotních problémů. Pomáháme klientům snižovat jeho hladinu přirozenou cestou.</p>
-          <div class="pillar-points">
-            <span>✓ Analýza hladiny</span>
-            <span>✓ Výživové strategie</span>
-            <span>✓ B vitaminy & folát</span>
-          </div>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">☀️</div>
-          <h3 class="pillar-title">Optimalizace vitamínu D</h3>
-          <p class="pillar-text">Vitamín D is klíčový pro imunitu, zdraví kostí, svalovou funkci a psychickou pohodu. Odhaduje se, že více než 50 % Čechů trpí jeho nedostatkem. Pomůžeme Vám dosáhnout optimální hladiny.</p>
-          <div class="pillar-points">
-            <span>✓ Test hladiny D3</span>
-            <span>✓ Správná suplementace</span>
-            <span>✓ K2+D3 synergie</span>
-          </div>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🦶</div>
-          <h3 class="pillar-title">Reflexní terapie</h3>
-          <p class="pillar-text">Reflexní terapie je holistická metoda, která prostřednictvím stimulace reflexních bodů na chodidlech, rukou a uších ovlivňuje celkový stav organismu a podporuje přirozené léčivé procesy těla.</p>
-          <div class="pillar-points">
-            <span>✓ Uvolnění napětí</span>
-            <span>✓ Podpora imunity</span>
-            <span>✓ Celková relaxace</span>
-          </div>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🫀</div>
-          <h3 class="pillar-title">Omega-3 & Antioxidanty</h3>
-          <p class="pillar-text">Správný poměr omega-3 a omega-6 mastných kyselin je základem protizánětlivého prostředí v těle. Spolupracujeme se světovým lídrem Zinzino, jehož testy odhalí Váš přesný poměr.</p>
-          <div class="pillar-points">
-            <span>✓ BalanceTest Zinzino</span>
-            <span>✓ Čisté rybí oleje</span>
-            <span>✓ Měřitelné výsledky</span>
-          </div>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🧘</div>
-          <h3 class="pillar-title">Harmonie mysli & těla</h3>
-          <p class="pillar-text">Zdraví není jen fyzické. Naše lektorka Martina se specializuje na psychologii a harmonizaci prostoru. Mentální pohoda je nezbytnou součástí celkového zdraví.</p>
-          <div class="pillar-points">
-            <span>✓ Psychologický přístup</span>
-            <span>✓ Harmonizace prostoru</span>
-            <span>✓ Koučování</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Zinzino & Věda -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Zinzino & Vědecká rada</span>
-        <h2 class="section-title">Koncept podložený testy a vědou</h2>
-        <p class="section-subtitle">Spolupracujeme se světovými lídry v oblasti personalizované výživy</p>
-      </div>
-      <div class="zinzino-split fade-in">
-        <div class="zinzino-science">
-          <div class="science-card">
-            <div class="science-img-wrapper">
-              <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000111-53a8853a8a/dr_Clayton.jpg?ph=bfae52bc36" alt="Dr. Paul Clayton" class="science-img rounded-img">
+          <!-- Pavel -->
+          <div class="team-detail-card fade-in">
+            <div class="team-detail-photo">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000180-ef129ef12c/IMG_20211227_174642.jpg?ph=bfae52bc36"
+                alt="Mgr. Pavel Slabihoud"
+                onerror="this.parentElement.innerHTML='<div class=\'avatar-large\'>PS</div>'">
             </div>
-            <div class="science-info">
-              <h3>Dr. Paul Clayton</h3>
-              <p class="science-role">Klinický farmakolog & vědecký poradce</p>
-              <p class="science-text">Dr. Clayton je průkopníkem ve výzkumu farmako-nutričních látek. Studoval na University of Edinburgh a pomáhá vyvíjet vědecky podložené výživové koncepty pro optimalizaci zdraví.</p>
-            </div>
-          </div>
-        </div>
-        <div class="zinzino-products">
-          <div class="product-showcase">
-            <div class="product-img-wrapper">
-              <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000201-1942e19430/balance-oil-kit.webp?ph=bfae52bc36" alt="Zinzino BalanceOil Kit" class="product-img rounded-img">
-            </div>
-            <div class="product-info">
-              <h3>Zinzino BalanceOil+</h3>
-              <p class="product-highlight">Synergická směs vysoce kvalitního rybího oleje a olivového oleje</p>
-              <p class="product-text">BalanceOil+ pomáhá upravit poměr omega-6 a omega-3 mastných kyselin v těle. Tento poměr zjistíme pomocí jednoduchého BalanceTestu ze suché krevní kapky, který si můžete udělat v pohodlí domova.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-inner fade-in">
-        <h2 class="cta-title">Chcete vědět více o svém zdraví?</h2>
-        <p class="cta-sub">Objednejte si konzultaci s Klárou a zjistěte, jak optimalizovat své zdraví na buněčné úrovni.</p>
-        <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Konzultace zdraví</button>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== PAGE: MISP & CO ===== -->
-<div id="page-misp" class="page">
-  <section class="page-hero page-hero-small">
-    <div class="page-hero-content container">
-      <span class="section-tag tag-white">Naše nabídka</span>
-      <h1 class="page-hero-title">MISP & Co ještě u nás</h1>
-      <p class="page-hero-sub">Komplexní péče o Vaše zdraví, pohyb a pohodu</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-
-      <!-- MISP -->
-      <div class="service-block fade-in">
-        <div class="service-block-icon">🤲</div>
-        <div class="service-block-content">
-          <span class="section-tag">Speciální program</span>
-          <h2 class="service-block-title">MISP – Massage In Schools Programme</h2>
-          <p class="section-text">MISP (Massage In Schools Programme) je mezinárodní program <strong>vzájemné masáže mezi dětmi</strong>, který byl vyvinut v Norsku a dnes je rozšířen ve více než 40 zemích světa.</p>
-          <p class="section-text">Program učí děti <strong>respektu k vlastnímu tělu a tělu druhých</strong>, rozvíjí empatii, snižuje stres a podporuje soustředění. Masáže probíhají přes oblečení, jsou zcela bezpečné a přinášejí dětem pocit pohody.</p>
-          <div class="service-block-features">
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Pro děti i dospělé</strong>
-                <p>Program lze aplikovat ve školách, školkách, ale i v rodinném prostředí.</p>
+            <div class="team-detail-info">
+              <h3 class="team-detail-name">Mgr. Pavel Slabihoud</h3>
+              <p class="team-detail-role">Trenér EMS & pedagog tělesné výchovy</p>
+              <div class="team-detail-tags">
+                <span class="tag-chip">Trenér EMS</span>
+                <span class="tag-chip">Pedagog TV</span>
+                <span class="tag-chip">Sportovní trenér</span>
+                <span class="tag-chip">Pořadatel akcí</span>
               </div>
-            </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Certifikovaný program</strong>
-                <p>Klára Slabihoudová je certifikovaná instruktorka MISP programu.</p>
-              </div>
-            </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Workshop & lekce</strong>
-                <p>Nabízíme workshopy pro rodiče i přímou výuku v rámci programu.</p>
+              <p class="team-detail-bio">Pedagog tělesné výchovy, lektor plavání, lyžování a snowboardingu, sportovní
+                trenér na teambuildingových projektech. Pořadatel celoročních sportovních akcí – příměstské tábory,
+                sportovní dny, volejbalové turnaje a paddleboardové závody. Trenér cvičení pomocí metody EMS.</p>
+              <div class="team-mottos">
+                <p class="motto-label">Oblíbené motto:</p>
+                <p class="motto">"Co nemáš, nepotřebuješ."</p>
               </div>
             </div>
           </div>
-          <div class="service-block-images">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000212-7f7637f766/Pozadej_o_svoleni_2.webp?ph=bfae52bc36" alt="MISP - Požádej o svolení" class="rounded-img service-img-half">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000213-d584dd584f/image-crop-200000146-1.webp?ph=bfae52bc36" alt="MISP - Masáž dětí" class="rounded-img service-img-half">
+
+          <!-- Martina -->
+          <div class="team-detail-card fade-in">
+            <div class="team-detail-photo">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000228-6e5fb6e5fc/Marta.jpeg?ph=bfae52bc36"
+                alt="Martina Zadražilová" onerror="this.parentElement.innerHTML='<div class=\'avatar-large\'>MZ</div>'">
+            </div>
+            <div class="team-detail-info">
+              <h3 class="team-detail-name">Martina Zadražilová</h3>
+              <p class="team-detail-role">Lektorka EMS & koordinátorka akcí</p>
+              <div class="team-detail-tags">
+                <span class="tag-chip">Lektorka EMS</span>
+                <span class="tag-chip">Psychologie</span>
+                <span class="tag-chip">Reflexní terapie</span>
+                <span class="tag-chip">Koučování</span>
+              </div>
+              <p class="team-detail-bio">Maminka „full time", která ví, jak jsou čas a zdraví vzácné. Koordinátorka
+                svatebních a narozeninových akcí, designérka. Úklid a harmonizace prostoru je její vášní. Vystudovala 3
+                roky zájmové studium psychologie, prošla kurzem reflexní terapie a momentálně intenzivně studuje
+                koučování.</p>
+              <div class="team-mottos">
+                <p class="motto-label">Oblíbená motta:</p>
+                <p class="motto">"Sedmkrát upadneš, osmkrát vstaň."</p>
+                <p class="motto">"Inspirace, kterou hledáš, je v Tobě."</p>
+                <p class="motto">"Co odešleš, to se ti vrátí."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PAGE: LEKCE EMS ===== -->
+  <div id="page-lekce" class="page">
+    <section class="page-hero page-hero-small">
+      <div class="page-hero-content container">
+        <span class="section-tag tag-white">Technologie & Benefity</span>
+        <h1 class="page-hero-title">Lekce & Benefity EMS</h1>
+        <p class="page-hero-sub">Revoluční elektrosvalová stimulace s technologií Justfit</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="split-layout fade-in">
+          <div class="split-text">
+            <span class="section-tag">Co je EMS?</span>
+            <h2 class="section-title">Electro Myo Stimulace</h2>
+            <p class="section-text">EMS (Electro Myo Stimulace) – elektrosvalová stimulace – se využívá již <strong>70
+                let v medicíně</strong> k rehabilitačním účelům a je využívána také profesionálními sportovci k dosažení
+              lepších výkonů.</p>
+            <p class="section-text">Využívá se revoluční elektrosvalová stimulace, kdy dochází k aktivaci svalstva i z
+              vnějšku, <strong>přirozenou kontrakcí svalu</strong>. Výsledkem je mimořádně efektivní trénink celého
+              těla.</p>
+            <p class="section-text">Díky bezdrátové technologii <strong>Justfit</strong> máte plnou svobodu pohybu –
+              žádné kabely, žádné omezení. Trénujete přirozeně, komfortně a efektivně.</p>
+          </div>
+          <div class="split-image">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000232-3be4c3be4e/700/benefity_Justfit.png?ph=bfae52bc36"
+              alt="Benefity Justfit EMS" class="rounded-img bg-white-padding">
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="section-divider"></div>
+    <!-- Jak to funguje -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Postup</span>
+          <h2 class="section-title">Jak probíhá lekce?</h2>
+        </div>
+        <div class="steps-grid fade-in">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Konzultace</h3>
+            <p class="step-text">Při první návštěvě proberete s lektorem Vaše cíle, zdravotní stav a možnosti. Lekce je
+              vždy individuálně přizpůsobená.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Oblečení EMS obleček</h3>
+            <p class="step-text">Navléknete si speciální EMS obleček Justfit, který snímá svalové skupiny celého těla.
+              Bezdrátová technologie – maximální volnost pohybu.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3 class="step-title">20 minut tréninku</h3>
+            <p class="step-text">Celý trénink trvá pouhých 20 minut, ale odpovídá intenzitou 90 minutům klasického
+              cvičení. Lektor Vás celou dobu vede a motivuje.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Výsledky</h3>
+            <p class="step-text">Výsledky jsou viditelné již po prvních lekcích. Stačí cvičit 1× týdně pro dosažení
+              trvalých změn v kondici, síle a postavě.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Plavání těhotných -->
-      <div class="service-block fade-in">
-        <div class="service-block-icon">🤰</div>
-        <div class="service-block-content">
-          <h2 class="service-block-title">Plavání těhotných</h2>
-          <p class="section-text">Klára Slabihoudová nabízí jako <strong>registrovaná porodní asistentka a lektorka plavání</strong> speciální lekce plavání pro těhotné ženy. Pohyb ve vodě je v těhotenství nesmírně přínosný – ulehčuje záda, zlepšuje kondici a přináší úlevu.</p>
-          <div class="service-block-features">
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Bezpečný pohyb v těhotenství</strong>
-                <p>Cvičení pod odborným dohledem porodní asistentky.</p>
+    <!-- Benefity -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Výhody</span>
+          <h2 class="section-title">Benefity EMS tréninku</h2>
+        </div>
+        <div class="benefits-grid fade-in">
+          <div class="benefit-card">
+            <div class="benefit-icon">💪</div>
+            <h3>Posílení svalů</h3>
+            <p>Aktivace až 90 % svalových vláken – výrazně více než při klasickém cvičení.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Časová efektivita</h3>
+            <p>20 minut = 90 min klasického tréninku. Ideální pro zaneprázdněné lidi.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>Hubnutí & tvarování</h3>
+            <p>Spalování tuků, tvarování problematických partií, zpevnění celého těla.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🦴</div>
+            <h3>Rehabilitace</h3>
+            <p>Úleva od bolestí zad, posílení pánevního dna, vhodné pro maminky po porodu.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🧬</div>
+            <h3>Sportovní výkon</h3>
+            <p>Využíváno vrcholovými sportovci pro zlepšení kondice a sportovních výsledků.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>Přirozené cvičení</h3>
+            <p>EMS nevytváří umělý pohyb – aktivuje svaly přirozenou kontrakcí. Bezpečné.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🤱</div>
+            <h3>Pro každého</h3>
+            <p>Vhodné pro seniory, maminky, aktivní sportovce i lidi bez předchozích zkušeností.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📡</div>
+            <h3>Bezdrátová Justfit</h3>
+            <p>Nejmodernější technologie bez kabelu pro maximální komfort a svobodu pohybu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fotogalerie z tréninků -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Jak to u nás vypadá</span>
+          <h2 class="section-title">Fotogalerie z EMS tréninků</h2>
+          <p class="section-subtitle">Pohledy přímo do našeho studia v Čáslavi</p>
+        </div>
+        <div class="gallery-grid fade-in">
+          <div class="gallery-item">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000242-b4860b4862/me_4.jpeg?ph=bfae52bc36"
+              alt="EMS trénink - ukázka cviku" class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000244-4ecb94ecbb/me_5.jpeg?ph=bfae52bc36"
+              alt="EMS cvičení s lektorem" class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000236-57d6857d69/me_6.jpeg?ph=bfae52bc36"
+              alt="EMS bezdrátový trénink Justfit" class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000238-4126e4126f/me_7.jpeg?ph=bfae52bc36"
+              alt="Individuální EMS trénink" class="gallery-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner fade-in">
+          <h2 class="cta-title">Vyzkoušejte EMS na vlastní kůži</h2>
+          <p class="cta-sub">Rezervujte si první lekci a přesvědčte se sami.</p>
+          <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Rezervovat lekci</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PAGE: KRYOLIPOLÝZA ===== -->
+  <div id="page-kryo" class="page">
+    <section class="page-hero page-hero-kryo">
+      <div class="page-hero-bg">
+        <img src="img_cryo.png" alt="Kryolipolýza" class="page-hero-bg-img">
+        <div class="page-hero-overlay kryo-overlay"></div>
+      </div>
+      <div class="page-hero-content container">
+        <span class="section-tag tag-blue">Nová služba 2024</span>
+        <h1 class="page-hero-title">Kryolipolýza</h1>
+        <p class="page-hero-sub">Odbourávání tuku chladem – neinvazivní, bezpečné, trvalé</p>
+        <button class="btn btn-white" onclick="showPage('kontakt')">Objednat konzultaci zdarma</button>
+      </div>
+    </section>
+
+    <!-- Co je kryolipolýza -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="split-layout fade-in">
+          <div class="split-text">
+            <span class="section-tag">Inovativní metoda</span>
+            <h2 class="section-title">Co je kryolipolýza?</h2>
+            <p class="section-text">Kryolipolýza je <strong>neinvazivní estetická metoda</strong> tvarování těla, která
+              využívá kontrolované chlazení k trvalému odbourávání tukových buněk. Metoda je vědecky ověřená a klinicky
+              testovaná.</p>
+            <p class="section-text">Tukové buňky jsou citlivější na chlad než okolní tkáně. Při teplotě kolem
+              <strong>-5°C až -10°C</strong> dochází k jejich přirozené apoptóze (buněčné smrti), zatímco kůže a okolní
+              tkáně zůstávají nepoškozeny.</p>
+            <p class="section-text">Odumřelé tukové buňky jsou v průběhu 4–12 týdnů <strong>přirozeně odbourány
+                lymfatickým systémem</strong> těla. Výsledky jsou trvalé – tukové buňky se nevracejí.</p>
+          </div>
+          <div class="split-image">
+            <img src="img_cryo.png" alt="Kryolipolýza ošetření" class="rounded-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jak to funguje - věda -->
+    <section class="section kryo-science-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Věda za metodou</span>
+          <h2 class="section-title">Jak to funguje?</h2>
+        </div>
+        <div class="kryo-process fade-in">
+          <div class="kryo-process-step">
+            <div class="kryo-step-icon">❄️</div>
+            <h3>Přiložení aplikátoru</h3>
+            <p>Na problematickou oblast se přiloží speciální vakuový aplikátor, který šetrně nasaje kůži a tukovou tkáň.
+            </p>
+          </div>
+          <div class="kryo-process-arrow">→</div>
+          <div class="kryo-process-step">
+            <div class="kryo-step-icon">🌡️</div>
+            <h3>Kontrolované chlazení</h3>
+            <p>Po dobu 30–60 minut se tkáň ochlazuje na přesně stanovenou teplotu. Tukové buňky krystalizují a přirozeně
+              zanikají.</p>
+          </div>
+          <div class="kryo-process-arrow">→</div>
+          <div class="kryo-process-step">
+            <div class="kryo-step-icon">✨</div>
+            <h3>Přirozené odbourání</h3>
+            <p>Lymfatický systém odbouraná tukové buňky v průběhu 4–12 týdnů. Výsledek je viditelný a trvalý.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Výhody -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Proč kryolipolýza?</h2>
+        </div>
+        <div class="kryo-advantages fade-in">
+          <div class="advantage-card">
+            <div class="advantage-icon">🚫</div>
+            <h3>Neinvazivní</h3>
+            <p>Žádné jehly, žádný skalpel, žádná anestezie. Metoda je zcela bezpečná a bez rizika jizev.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">🛋️</div>
+            <h3>Bezbolestná</h3>
+            <p>Během ošetření můžete relaxovat, číst nebo poslouchat hudbu. Procedura je příjemná a pohodlná.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">⏱️</div>
+            <h3>Bez rekonvalescence</h3>
+            <p>Po ošetření ihned pokračujete v normálním denním programu. Žádná omezení pohybu.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">📉</div>
+            <h3>Trvalé výsledky</h3>
+            <p>Tukové buňky jsou trvalé odstraněny. Výsledky jsou viditelné a při zdravém životním stylu trvalé.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">🎯</div>
+            <h3>Cílená redukce</h3>
+            <p>Přesné ošetření problematických partií – břicho, boky, stehna, záda, podbradek a další.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">🔬</div>
+            <h3>Vědecky ověřená</h3>
+            <p>Metoda je klinicky testovaná, vědecky podložená a schválená pro estetické ošetření.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pro koho -->
+    <section class="section">
+      <div class="container">
+        <div class="split-layout fade-in">
+          <div class="split-image">
+            <div class="kryo-device-showcase">
+              <img src="img_cryo.png" alt="Kryolipolýza přístroj" class="rounded-img">
+            </div>
+          </div>
+          <div class="split-text">
+            <span class="section-tag">Vhodnost</span>
+            <h2 class="section-title">Pro koho je kryolipolýza vhodná?</h2>
+            <div class="suitability-list">
+              <div class="suitability-item suitability-yes">
+                <span class="suit-icon">✓</span>
+                <div>
+                  <strong>Lidé s lokálními tukovými zásobami</strong>
+                  <p>Tuk na břichu, bocích, stehnech nebo zádech, který nejde odcvičit.</p>
+                </div>
+              </div>
+              <div class="suitability-item suitability-yes">
+                <span class="suit-icon">✓</span>
+                <div>
+                  <strong>Po porodu a hubnutí</strong>
+                  <p>Dokonalé dotvarování těla po velkých změnách hmotnosti.</p>
+                </div>
+              </div>
+              <div class="suitability-item suitability-yes">
+                <span class="suit-icon">✓</span>
+                <div>
+                  <strong>Aktivní lidé</strong>
+                  <p>Cvičíte, ale určité partie neodpovídají Vašemu úsilí? Kryolipolýza pomůže.</p>
+                </div>
+              </div>
+              <div class="suitability-item suitability-no">
+                <span class="suit-icon suit-icon-no">✗</span>
+                <div>
+                  <strong>Nevhodné při</strong>
+                  <p>Těhotenství, kryoglobulinemii, výrazných onemocněních kůže v místě ošetření.</p>
+                </div>
               </div>
             </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Individuální i skupinové lekce</strong>
-                <p>Přizpůsobíme program Vašim potřebám a trimestru.</p>
+            <p class="section-text" style="margin-top: 1.5rem; font-style: italic;">Při konzultaci v našem studiu
+              posoudíme, zda je kryolipolýza pro vás vhodná.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Průběh ošetření -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">U nás ve studiu</span>
+          <h2 class="section-title">Jak probíhá ošetření v ABSOLUTE studiu?</h2>
+        </div>
+        <div class="treatment-timeline fade-in">
+          <div class="timeline-item">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-content">
+              <h3>Bezplatná konzultace</h3>
+              <p>Přijďte na konzultaci, kde posoudíme Vaše potřeby, vysvětlíme celý průběh a zodpovíme všechny otázky.
+                Úplně zdarma.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-content">
+              <h3>Fotodokumentace</h3>
+              <p>Pořídíme fotodokumentaci před ošetřením pro sledování výsledků.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-content">
+              <h3>Samotné ošetření</h3>
+              <p>Příjemné 30–60minutové ošetření v pohodlné poloze. Můžete relaxovat nebo si přinést knihu.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-content">
+              <h3>Sledování výsledků</h3>
+              <p>Výsledky se projevují postupně v průběhu 4–12 týdnů. Fotodokumentací sledujeme Váš pokrok.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">5</div>
+            <div class="timeline-content">
+              <h3>Případné další ošetření</h3>
+              <p>Na základě výsledků doporučíme, zda je vhodné ošetření zopakovat nebo ošetřit další partie.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Časté otázky</h2>
+        </div>
+        <div class="faq-list fade-in">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Bolí kryolipolýza?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Kryolipolýza je bezbolestná. Při přiložení aplikátoru pocítíte táhnutí a intenzivní chlad, který po
+                chvíli odeznívá. Většina klientů během procedury relaxuje nebo spí.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Kdy uvidím výsledky?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Výsledky jsou viditelné postupně v průběhu 4–12 týdnů po ošetření. Plné výsledky se projeví zpravidla
+                po 3 měsících, kdy lymfatický systém odbourá všechny zničené tukové buňky.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Kolik ošetření je potřeba?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>U většiny klientů stačí 1–3 ošetření na jednu oblast v závislosti na množství tuku a požadovaném
+                výsledku. Konzultaci přesného počtu provedeme individuálně.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Jsou výsledky trvalé?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Ano! Tukové buňky jsou jednou provždy odstraněny. Při zdravém životním stylu jsou výsledky trvalé.
+                Zbývající tukové buňky se sice mohou zvětšit při přibírání, ale ošetřená oblast si zachovává příznivý
+                tvar.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Jaké partie lze ošetřit?
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Nejčastěji se ošetřuje břicho, boky, stehna (vnitřní i vnější), záda (tzv. \"milenky\"), ramena a
+                podbradek. Každou část posoudíme při konzultaci.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section cta-kryo">
+      <div class="container">
+        <div class="cta-inner fade-in">
+          <h2 class="cta-title">Začněte svou cestu k dokonalé postavě</h2>
+          <p class="cta-sub">Objednejte si bezplatnou konzultaci kryolipolýzy ještě dnes.</p>
+          <button class="btn btn-white btn-large" onclick="showPage('kontakt')">Konzultace zdarma</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PAGE: KONCEPT ZDRAVÍ ===== -->
+  <div id="page-zdravi" class="page">
+    <section class="page-hero page-hero-small">
+      <div class="page-hero-content container">
+        <span class="section-tag tag-white">Wellness & Výživa</span>
+        <h1 class="page-hero-title">Koncept zdraví</h1>
+        <p class="page-hero-sub">Zdraví na buněčné úrovni – základ trvalé vitaliy</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="split-layout fade-in">
+          <div class="split-text">
+            <span class="section-tag">Filozofie zdraví</span>
+            <h2 class="section-title">Zdraví začíná uvnitř</h2>
+            <p class="section-text">V ABSOLUTE studiu věříme, že skutečné zdraví začíná na buněčné úrovni. Pohyb je
+              skvělý základ, ale bez správné výživy a vnitřní rovnováhy nelze dosáhnout plného potenciálu.</p>
+            <p class="section-text">Naše majitelka Klára Slabihoudová se specializuje na <strong>výživu na buněčné
+                úrovni podloženou testy</strong>. Umíme identifikovat nedostatky a nastavit konkrétní plán pro Vaše
+              zdraví.</p>
+          </div>
+          <div class="split-image">
+            <img
+              src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000204-426694266b/zinzino-ip-images-lifestyle-904172104.webp?ph=bfae52bc36"
+              alt="Koncept zdraví - Zinzino Balance" class="rounded-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilíře zdraví -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Naše témata</span>
+          <h2 class="section-title">Pilíře zdravého života</h2>
+        </div>
+        <div class="health-pillars fade-in">
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🧬</div>
+            <h3 class="pillar-title">Výživa na buněčné úrovni</h3>
+            <p class="pillar-text">Každá buňka v těle potřebuje správné živiny, aby správně fungovala. Pomocí testů
+              identifikujeme nedostatky a nastavíme individuální suplementaci a stravu přesně pro Vás.</p>
+            <div class="pillar-points">
+              <span>✓ Testy nutričního stavu</span>
+              <span>✓ Individuální plán</span>
+              <span>✓ Sledování pokroku</span>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🔴</div>
+            <h3 class="pillar-title">Snižování homocysteinu</h3>
+            <p class="pillar-text">Homocystein je aminokyselina, jejíž zvýšená hladina v krvi zvyšuje riziko
+              kardiovaskulárních onemocnění, demence a dalších zdravotních problémů. Pomáháme klientům snižovat jeho
+              hladinu přirozenou cestou.</p>
+            <div class="pillar-points">
+              <span>✓ Analýza hladiny</span>
+              <span>✓ Výživové strategie</span>
+              <span>✓ B vitaminy & folát</span>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">☀️</div>
+            <h3 class="pillar-title">Optimalizace vitamínu D</h3>
+            <p class="pillar-text">Vitamín D is klíčový pro imunitu, zdraví kostí, svalovou funkci a psychickou pohodu.
+              Odhaduje se, že více než 50 % Čechů trpí jeho nedostatkem. Pomůžeme Vám dosáhnout optimální hladiny.</p>
+            <div class="pillar-points">
+              <span>✓ Test hladiny D3</span>
+              <span>✓ Správná suplementace</span>
+              <span>✓ K2+D3 synergie</span>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🦶</div>
+            <h3 class="pillar-title">Reflexní terapie</h3>
+            <p class="pillar-text">Reflexní terapie je holistická metoda, která prostřednictvím stimulace reflexních
+              bodů na chodidlech, rukou a uších ovlivňuje celkový stav organismu a podporuje přirozené léčivé procesy
+              těla.</p>
+            <div class="pillar-points">
+              <span>✓ Uvolnění napětí</span>
+              <span>✓ Podpora imunity</span>
+              <span>✓ Celková relaxace</span>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🫀</div>
+            <h3 class="pillar-title">Omega-3 & Antioxidanty</h3>
+            <p class="pillar-text">Správný poměr omega-3 a omega-6 mastných kyselin je základem protizánětlivého
+              prostředí v těle. Spolupracujeme se světovým lídrem Zinzino, jehož testy odhalí Váš přesný poměr.</p>
+            <div class="pillar-points">
+              <span>✓ BalanceTest Zinzino</span>
+              <span>✓ Čisté rybí oleje</span>
+              <span>✓ Měřitelné výsledky</span>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🧘</div>
+            <h3 class="pillar-title">Harmonie mysli & těla</h3>
+            <p class="pillar-text">Zdraví není jen fyzické. Naše lektorka Martina se specializuje na psychologii a
+              harmonizaci prostoru. Mentální pohoda je nezbytnou součástí celkového zdraví.</p>
+            <div class="pillar-points">
+              <span>✓ Psychologický přístup</span>
+              <span>✓ Harmonizace prostoru</span>
+              <span>✓ Koučování</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Zinzino & Věda -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Zinzino & Vědecká rada</span>
+          <h2 class="section-title">Koncept podložený testy a vědou</h2>
+          <p class="section-subtitle">Spolupracujeme se světovými lídry v oblasti personalizované výživy</p>
+        </div>
+        <div class="zinzino-split fade-in">
+          <div class="zinzino-science">
+            <div class="science-card">
+              <div class="science-img-wrapper">
+                <img
+                  src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000111-53a8853a8a/dr_Clayton.jpg?ph=bfae52bc36"
+                  alt="Dr. Paul Clayton" class="science-img rounded-img">
+              </div>
+              <div class="science-info">
+                <h3>Dr. Paul Clayton</h3>
+                <p class="science-role">Klinický farmakolog & vědecký poradce</p>
+                <p class="science-text">Dr. Clayton je průkopníkem ve výzkumu farmako-nutričních látek. Studoval na
+                  University of Edinburgh a pomáhá vyvíjet vědecky podložené výživové koncepty pro optimalizaci zdraví.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="zinzino-products">
+            <div class="product-showcase">
+              <div class="product-img-wrapper">
+                <img
+                  src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000201-1942e19430/balance-oil-kit.webp?ph=bfae52bc36"
+                  alt="Zinzino BalanceOil Kit" class="product-img rounded-img">
+              </div>
+              <div class="product-info">
+                <h3>Zinzino BalanceOil+</h3>
+                <p class="product-highlight">Synergická směs vysoce kvalitního rybího oleje a olivového oleje</p>
+                <p class="product-text">BalanceOil+ pomáhá upravit poměr omega-6 a omega-3 mastných kyselin v těle.
+                  Tento poměr zjistíme pomocí jednoduchého BalanceTestu ze suché krevní kapky, který si můžete udělat v
+                  pohodlí domova.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="section-divider"></div>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner fade-in">
+          <h2 class="cta-title">Chcete vědět více o svém zdraví?</h2>
+          <p class="cta-sub">Objednejte si konzultaci s Klárou a zjistěte, jak optimalizovat své zdraví na buněčné
+            úrovni.</p>
+          <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Konzultace zdraví</button>
+        </div>
+      </div>
+    </section>
+  </div>
 
-      <!-- Sportovní akce -->
-      <div class="service-block fade-in">
-        <div class="service-block-icon">🏆</div>
-        <div class="service-block-content">
-          <h2 class="service-block-title">Sportovní akce & Teambuilding</h2>
-          <p class="section-text">Pavel Slabihoud pořádá celoroční sportovní akce – od příměstských táborů přes sportovní dny až po volejbalové turnaje a paddleboardové závody. Také nabízíme profesionální teambuilding pro firmy.</p>
-          <div class="service-block-features">
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Příměstské tábory</strong>
-                <p>Letní i zimní sportovní tábory pro děti různých věkových kategorií.</p>
+  <!-- ===== PAGE: MISP & CO ===== -->
+  <div id="page-misp" class="page">
+    <section class="page-hero page-hero-small">
+      <div class="page-hero-content container">
+        <span class="section-tag tag-white">Naše nabídka</span>
+        <h1 class="page-hero-title">MISP & Co ještě u nás</h1>
+        <p class="page-hero-sub">Komplexní péče o Vaše zdraví, pohyb a pohodu</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+
+        <!-- MISP -->
+        <div class="service-block fade-in">
+          <div class="service-block-icon">🤲</div>
+          <div class="service-block-content">
+            <span class="section-tag">Speciální program</span>
+            <h2 class="service-block-title">MISP – Massage In Schools Programme</h2>
+            <p class="section-text">MISP (Massage In Schools Programme) je mezinárodní program <strong>vzájemné masáže
+                mezi dětmi</strong>, který byl vyvinut v Norsku a dnes je rozšířen ve více než 40 zemích světa.</p>
+            <p class="section-text">Program učí děti <strong>respektu k vlastnímu tělu a tělu druhých</strong>, rozvíjí
+              empatii, snižuje stres a podporuje soustředění. Masáže probíhají přes oblečení, jsou zcela bezpečné a
+              přinášejí dětem pocit pohody.</p>
+            <div class="service-block-features">
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Pro děti i dospělé</strong>
+                  <p>Program lze aplikovat ve školách, školkách, ale i v rodinném prostředí.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Certifikovaný program</strong>
+                  <p>Klára Slabihoudová je certifikovaná instruktorka MISP programu.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Workshop & lekce</strong>
+                  <p>Nabízíme workshopy pro rodiče i přímou výuku v rámci programu.</p>
+                </div>
               </div>
             </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Volejbal & Paddleboard</strong>
-                <p>Pravidelné turnaje a závody pro sport nadšence všech úrovní.</p>
+            <div class="service-block-images">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000212-7f7637f766/Pozadej_o_svoleni_2.webp?ph=bfae52bc36"
+                alt="MISP - Požádej o svolení" class="rounded-img service-img-half">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000213-d584dd584f/image-crop-200000146-1.webp?ph=bfae52bc36"
+                alt="MISP - Masáž dětí" class="rounded-img service-img-half">
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Plavání těhotných -->
+        <div class="service-block fade-in">
+          <div class="service-block-icon">🤰</div>
+          <div class="service-block-content">
+            <h2 class="service-block-title">Plavání těhotných</h2>
+            <p class="section-text">Klára Slabihoudová nabízí jako <strong>registrovaná porodní asistentka a lektorka
+                plavání</strong> speciální lekce plavání pro těhotné ženy. Pohyb ve vodě je v těhotenství nesmírně
+              přínosný – ulehčuje záda, zlepšuje kondici a přináší úlevu.</p>
+            <div class="service-block-features">
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Bezpečný pohyb v těhotenství</strong>
+                  <p>Cvičení pod odborným dohledem porodní asistentky.</p>
+                </div>
               </div>
-            </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Teambuilding pro firmy</strong>
-                <p>Originální sportovní aktivity pro posílení týmové spolupráce.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-divider"></div>
-
-      <!-- Koordinace akcí -->
-      <div class="service-block fade-in">
-        <div class="service-block-icon">💍</div>
-        <div class="service-block-content">
-          <h2 class="service-block-title">Koordinace akcí & Harmonizace prostoru</h2>
-          <p class="section-text">Martina Zadražilová je zkušená koordinátorka <strong>svatebních a narozeninových akcí</strong>. Její vášeň pro harmonizaci prostoru a estetiku z ní dělá ideální partnerku pro organizaci Vašich vzpomínek.</p>
-          <div class="service-block-features">
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Svatební koordinace</strong>
-                <p>Kompletní organizace Vašeho velkého dne od A do Z.</p>
-              </div>
-            </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Narozeninové a firemní akce</strong>
-                <p>Originální a stylové oslavy přizpůsobené Vašemu vkusu.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-divider"></div>
-
-      <!-- Masážní křeslo -->
-      <div class="service-block fade-in">
-        <div class="service-block-icon">💆</div>
-        <div class="service-block-content">
-          <h2 class="service-block-title">Masážní křeslo – Váš koutek klidu</h2>
-          <p class="section-text">Dopřejte si chvíli absolutní relaxace na našem profesionálním masážním křesle. Je to ideální doplněk po intenzivním EMS tréninku nebo prostě jako rychlá regenerace během náročného dne.</p>
-          <div class="service-block-features">
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Okamžitá úleva od napětí</strong>
-                <p>Křeslo simuluje různé masážní techniky pro uvolnění celého těla.</p>
-              </div>
-            </div>
-            <div class="service-feature">
-              <span class="sf-icon">✓</span>
-              <div>
-                <strong>Příjemný relaxační koutek</strong>
-                <p>Náš koutek s masážním křeslem nabízí naprosté soukromí a pohodlí.</p>
-              </div>
-            </div>
-          </div>
-          <div class="service-block-images">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000219-85ed885ed9/mas_kreslo_na_web.webp?ph=bfae52bc36" alt="Masážní křeslo" class="rounded-img service-img-half">
-            <img src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000221-a6177a617a/mas_kreslo_koutek.webp?ph=bfae52bc36" alt="Masážní koutek" class="rounded-img service-img-half">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-inner fade-in">
-        <h2 class="cta-title">Zajímá Vás některá z našich služeb?</h2>
-        <p class="cta-sub">Kontaktujte nás a domluvíme se na detailech.</p>
-        <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Kontaktovat studio</button>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== PAGE: CENÍK ===== -->
-<div id="page-cenik" class="page">
-  <section class="page-hero page-hero-small">
-    <div class="page-hero-content container">
-      <span class="section-tag tag-white">Přehledné ceny</span>
-      <h1 class="page-hero-title">Ceník</h1>
-      <p class="page-hero-sub">Transparentní ceny bez skrytých poplatků</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-
-      <!-- EMS Ceník -->
-      <div class="price-section fade-in">
-        <div class="price-section-header">
-          <span class="price-icon">⚡</span>
-          <h2 class="price-section-title">EMS Trénink</h2>
-        </div>
-        <div class="price-cards">
-          <div class="price-card">
-            <div class="price-card-header">
-              <h3>Jednorázová lekce</h3>
-              <span class="price-badge">1 lekce</span>
-            </div>
-            <div class="price-amount">490 Kč</div>
-            <div class="price-desc">20 min individuální lekce s lektorem</div>
-            <ul class="price-includes">
-              <li>✓ 20 min EMS tréninku</li>
-              <li>✓ Vedení kvalifikovaným lektorem</li>
-              <li>✓ Justfit bezdrátová technologie</li>
-              <li>✓ Individuální přístup</li>
-            </ul>
-            <button class="btn btn-secondary" onclick="showPage('kontakt')">Rezervovat</button>
-          </div>
-          <div class="price-card price-card-featured">
-            <div class="price-card-badge-top">Nejoblíbenější</div>
-            <div class="price-card-header">
-              <h3>Permanentka 10 lekcí</h3>
-              <span class="price-badge">10 lekcí</span>
-            </div>
-            <div class="price-amount">4 500 Kč</div>
-            <div class="price-desc">Ušetříte 400 Kč oproti jednorázovým lekcím</div>
-            <ul class="price-includes">
-              <li>✓ 10 × 20 min EMS tréninku</li>
-              <li>✓ Vedení kvalifikovaným lektorem</li>
-              <li>✓ Platnost 3 měsíce</li>
-              <li>✓ Sledování pokroku</li>
-              <li>✓ Prioritní rezervace</li>
-            </ul>
-            <button class="btn btn-primary" onclick="showPage('kontakt')">Rezervovat</button>
-          </div>
-          <div class="price-card">
-            <div class="price-card-header">
-              <h3>Permanentka 20 lekcí</h3>
-              <span class="price-badge">20 lekcí</span>
-            </div>
-            <div class="price-amount">8 400 Kč</div>
-            <div class="price-desc">Ušetříte 1 400 Kč – nejlepší hodnota</div>
-            <ul class="price-includes">
-              <li>✓ 20 × 20 min EMS tréninku</li>
-              <li>✓ Vedení kvalifikovaným lektorem</li>
-              <li>✓ Platnost 6 měsíců</li>
-              <li>✓ Detailní sledování pokroku</li>
-              <li>✓ Prioritní rezervace</li>
-            </ul>
-            <button class="btn btn-secondary" onclick="showPage('kontakt')">Rezervovat</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kryolipolýza Ceník -->
-      <div class="price-section fade-in">
-        <div class="price-section-header">
-          <span class="price-icon">❄️</span>
-          <h2 class="price-section-title">Kryolipolýza</h2>
-        </div>
-        <div class="price-cards">
-          <div class="price-card">
-            <div class="price-card-header">
-              <h3>1 oblast</h3>
-              <span class="price-badge">1 ošetření</span>
-            </div>
-            <div class="price-amount">2 500 Kč</div>
-            <div class="price-desc">Ošetření jedné problematické oblasti</div>
-            <ul class="price-includes">
-              <li>✓ 30–60 min procedura</li>
-              <li>✓ Konzultace před ošetřením</li>
-              <li>✓ Fotodokumentace</li>
-              <li>✓ Odborný dohled</li>
-            </ul>
-            <button class="btn btn-secondary" onclick="showPage('kontakt')">Objednat</button>
-          </div>
-          <div class="price-card price-card-featured">
-            <div class="price-card-badge-top">Doporučujeme</div>
-            <div class="price-card-header">
-              <h3>2 oblasti najednou</h3>
-              <span class="price-badge">1 návštěva</span>
-            </div>
-            <div class="price-amount">4 500 Kč</div>
-            <div class="price-desc">Ošetření dvou oblastí v rámci jedné návštěvy</div>
-            <ul class="price-includes">
-              <li>✓ Dvě oblasti současně</li>
-              <li>✓ Výrazná časová úspora</li>
-              <li>✓ Konzultace & fotodokumentace</li>
-              <li>✓ Sledování výsledků</li>
-            </ul>
-            <button class="btn btn-primary" onclick="showPage('kontakt')">Objednat</button>
-          </div>
-          <div class="price-card">
-            <div class="price-card-header">
-              <h3>Konzultace</h3>
-              <span class="price-badge">Zdarma</span>
-            </div>
-            <div class="price-amount">0 Kč</div>
-            <div class="price-desc">Bezplatná konzultace a posouzení vhodnosti</div>
-            <ul class="price-includes">
-              <li>✓ Posouzení Vašich potřeb</li>
-              <li>✓ Vysvětlení procedury</li>
-              <li>✓ Odpovědi na otázky</li>
-              <li>✓ Bez závazků</li>
-            </ul>
-            <button class="btn btn-secondary" onclick="showPage('kontakt')">Objednat zdarma</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ostatní služby -->
-      <div class="price-section fade-in">
-        <div class="price-section-header">
-          <span class="price-icon">🌿</span>
-          <h2 class="price-section-title">Ostatní služby</h2>
-        </div>
-        <div class="other-prices-table">
-          <div class="other-price-row">
-            <span class="other-price-name">Konzultace výživa na buněčné úrovni</span>
-            <span class="other-price-amount">od 500 Kč</span>
-          </div>
-          <div class="other-price-row">
-            <span class="other-price-name">Reflexní terapie</span>
-            <span class="other-price-amount">od 600 Kč</span>
-          </div>
-          <div class="other-price-row">
-            <span class="other-price-name">Workshop MISP (Massage In Schools Programme)</span>
-            <span class="other-price-amount">dle domluvy</span>
-          </div>
-          <div class="other-price-row">
-            <span class="other-price-name">Koordinace událostí (svatby, narozeniny)</span>
-            <span class="other-price-amount">dle rozsahu</span>
-          </div>
-          <div class="other-price-row">
-            <span class="other-price-name">Lekce plavání těhotných</span>
-            <span class="other-price-amount">dle domluvy</span>
-          </div>
-          <div class="other-price-row">
-            <span class="other-price-name">Sportovní teambuilding</span>
-            <span class="other-price-amount">dle domluvy</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="price-note fade-in">
-        <p>💡 Ceny jsou orientační. Pro přesnou nabídku nás kontaktujte. Dárkové poukazy na všechny naše služby jsou samozřejmostí!</p>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<!-- ===== PAGE: KONTAKT ===== -->
-<div id="page-kontakt" class="page">
-  <section class="page-hero page-hero-small">
-    <div class="page-hero-content container">
-      <span class="section-tag tag-white">Jsme tu pro Vás</span>
-      <h1 class="page-hero-title">Kontakt</h1>
-      <p class="page-hero-sub">Rezervujte si lekci nebo se zeptejte na cokoliv</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-      <div class="contact-layout">
-
-        <!-- Kontaktní info -->
-        <div class="contact-info fade-in">
-          <h2 class="contact-info-title">Navštivte nás</h2>
-
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div class="contact-detail">
-              <strong>Adresa</strong>
-              <p>Pražská 1081<br>286 01 Čáslav</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <div class="contact-detail">
-              <strong>Telefon</strong>
-              <a href="tel:+420776123456" class="contact-link">+420 776 123 456</a>
-              <p class="contact-note">Po–Pá: 8:00–20:00, So: 9:00–14:00</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div class="contact-detail">
-              <strong>E-mail</strong>
-              <a href="mailto:info@absolutestudio.cz" class="contact-link">info@absolutestudio.cz</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">📸</div>
-            <div class="contact-detail">
-              <strong>Sledujte nás</strong>
-              <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" class="social-link">Facebook</a>
-                <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Individuální i skupinové lekce</strong>
+                  <p>Přizpůsobíme program Vašim potřebám a trimestru.</p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Map placeholder -->
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.3978!2d15.3884!3d49.9095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c40c47e8935b1%3A0x408b9f1bfb48e9d6!2sPra%C5%BEsk%C3%A1%201081%2C%20286%2001%20%C4%8C%C3%A1slav!5e0!3m2!1scs!2scz!4v1690000000000!5m2!1scs!2scz"
-              width="100%"
-              height="250"
-              style="border:0; border-radius: 12px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="ABSOLUTE studio mapa">
-            </iframe>
+        <div class="section-divider"></div>
+
+        <!-- Sportovní akce -->
+        <div class="service-block fade-in">
+          <div class="service-block-icon">🏆</div>
+          <div class="service-block-content">
+            <h2 class="service-block-title">Sportovní akce & Teambuilding</h2>
+            <p class="section-text">Pavel Slabihoud pořádá celoroční sportovní akce – od příměstských táborů přes
+              sportovní dny až po volejbalové turnaje a paddleboardové závody. Také nabízíme profesionální teambuilding
+              pro firmy.</p>
+            <div class="service-block-features">
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Příměstské tábory</strong>
+                  <p>Letní i zimní sportovní tábory pro děti různých věkových kategorií.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Volejbal & Paddleboard</strong>
+                  <p>Pravidelné turnaje a závody pro sport nadšence všech úrovní.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Teambuilding pro firmy</strong>
+                  <p>Originální sportovní aktivity pro posílení týmové spolupráce.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Kontaktní formulář -->
-        <div class="contact-form-wrapper fade-in">
-          <h2 class="contact-form-title">Napište nám</h2>
-          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
-            <div class="form-row">
+        <div class="section-divider"></div>
+
+        <!-- Koordinace akcí -->
+        <div class="service-block fade-in">
+          <div class="service-block-icon">💍</div>
+          <div class="service-block-content">
+            <h2 class="service-block-title">Koordinace akcí & Harmonizace prostoru</h2>
+            <p class="section-text">Martina Zadražilová je zkušená koordinátorka <strong>svatebních a narozeninových
+                akcí</strong>. Její vášeň pro harmonizaci prostoru a estetiku z ní dělá ideální partnerku pro organizaci
+              Vašich vzpomínek.</p>
+            <div class="service-block-features">
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Svatební koordinace</strong>
+                  <p>Kompletní organizace Vašeho velkého dne od A do Z.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Narozeninové a firemní akce</strong>
+                  <p>Originální a stylové oslavy přizpůsobené Vašemu vkusu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Masážní křeslo -->
+        <div class="service-block fade-in">
+          <div class="service-block-icon">💆</div>
+          <div class="service-block-content">
+            <h2 class="service-block-title">Masážní křeslo – Váš koutek klidu</h2>
+            <p class="section-text">Dopřejte si chvíli absolutní relaxace na našem profesionálním masážním křesle. Je to
+              ideální doplněk po intenzivním EMS tréninku nebo prostě jako rychlá regenerace během náročného dne.</p>
+            <div class="service-block-features">
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Okamžitá úleva od napětí</strong>
+                  <p>Křeslo simuluje různé masážní techniky pro uvolnění celého těla.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <span class="sf-icon">✓</span>
+                <div>
+                  <strong>Příjemný relaxační koutek</strong>
+                  <p>Náš koutek s masážním křeslem nabízí naprosté soukromí a pohodlí.</p>
+                </div>
+              </div>
+            </div>
+            <div class="service-block-images">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000219-85ed885ed9/mas_kreslo_na_web.webp?ph=bfae52bc36"
+                alt="Masážní křeslo" class="rounded-img service-img-half">
+              <img
+                src="https://bfae52bc36.clvaw-cdnwnd.com/2a151c47c6597de3ac94c6100e087b21/200000221-a6177a617a/mas_kreslo_koutek.webp?ph=bfae52bc36"
+                alt="Masážní koutek" class="rounded-img service-img-half">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner fade-in">
+          <h2 class="cta-title">Zajímá Vás některá z našich služeb?</h2>
+          <p class="cta-sub">Kontaktujte nás a domluvíme se na detailech.</p>
+          <button class="btn btn-primary btn-large" onclick="showPage('kontakt')">Kontaktovat studio</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PAGE: CENÍK ===== -->
+  <div id="page-cenik" class="page">
+    <section class="page-hero page-hero-small">
+      <div class="page-hero-content container">
+        <span class="section-tag tag-white">Přehledné ceny</span>
+        <h1 class="page-hero-title">Ceník</h1>
+        <p class="page-hero-sub">Transparentní ceny bez skrytých poplatků</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+
+        <!-- EMS Ceník -->
+        <div class="price-section fade-in">
+          <div class="price-section-header">
+            <span class="price-icon">⚡</span>
+            <h2 class="price-section-title">EMS Trénink</h2>
+          </div>
+          <div class="price-cards">
+            <div class="price-card">
+              <div class="price-card-header">
+                <h3>Jednorázová lekce</h3>
+                <span class="price-badge">1 lekce</span>
+              </div>
+              <div class="price-amount">490 Kč</div>
+              <div class="price-desc">20 min individuální lekce s lektorem</div>
+              <ul class="price-includes">
+                <li>✓ 20 min EMS tréninku</li>
+                <li>✓ Vedení kvalifikovaným lektorem</li>
+                <li>✓ Justfit bezdrátová technologie</li>
+                <li>✓ Individuální přístup</li>
+              </ul>
+              <button class="btn btn-secondary" onclick="showPage('kontakt')">Rezervovat</button>
+            </div>
+            <div class="price-card price-card-featured">
+              <div class="price-card-badge-top">Nejoblíbenější</div>
+              <div class="price-card-header">
+                <h3>Permanentka 10 lekcí</h3>
+                <span class="price-badge">10 lekcí</span>
+              </div>
+              <div class="price-amount">4 500 Kč</div>
+              <div class="price-desc">Ušetříte 400 Kč oproti jednorázovým lekcím</div>
+              <ul class="price-includes">
+                <li>✓ 10 × 20 min EMS tréninku</li>
+                <li>✓ Vedení kvalifikovaným lektorem</li>
+                <li>✓ Platnost 3 měsíce</li>
+                <li>✓ Sledování pokroku</li>
+                <li>✓ Prioritní rezervace</li>
+              </ul>
+              <button class="btn btn-primary" onclick="showPage('kontakt')">Rezervovat</button>
+            </div>
+            <div class="price-card">
+              <div class="price-card-header">
+                <h3>Permanentka 20 lekcí</h3>
+                <span class="price-badge">20 lekcí</span>
+              </div>
+              <div class="price-amount">8 400 Kč</div>
+              <div class="price-desc">Ušetříte 1 400 Kč – nejlepší hodnota</div>
+              <ul class="price-includes">
+                <li>✓ 20 × 20 min EMS tréninku</li>
+                <li>✓ Vedení kvalifikovaným lektorem</li>
+                <li>✓ Platnost 6 měsíců</li>
+                <li>✓ Detailní sledování pokroku</li>
+                <li>✓ Prioritní rezervace</li>
+              </ul>
+              <button class="btn btn-secondary" onclick="showPage('kontakt')">Rezervovat</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kryolipolýza Ceník -->
+        <div class="price-section fade-in">
+          <div class="price-section-header">
+            <span class="price-icon">❄️</span>
+            <h2 class="price-section-title">Kryolipolýza</h2>
+          </div>
+          <div class="price-cards">
+            <div class="price-card">
+              <div class="price-card-header">
+                <h3>1 oblast</h3>
+                <span class="price-badge">1 ošetření</span>
+              </div>
+              <div class="price-amount">2 500 Kč</div>
+              <div class="price-desc">Ošetření jedné problematické oblasti</div>
+              <ul class="price-includes">
+                <li>✓ 30–60 min procedura</li>
+                <li>✓ Konzultace před ošetřením</li>
+                <li>✓ Fotodokumentace</li>
+                <li>✓ Odborný dohled</li>
+              </ul>
+              <button class="btn btn-secondary" onclick="showPage('kontakt')">Objednat</button>
+            </div>
+            <div class="price-card price-card-featured">
+              <div class="price-card-badge-top">Doporučujeme</div>
+              <div class="price-card-header">
+                <h3>2 oblasti najednou</h3>
+                <span class="price-badge">1 návštěva</span>
+              </div>
+              <div class="price-amount">4 500 Kč</div>
+              <div class="price-desc">Ošetření dvou oblastí v rámci jedné návštěvy</div>
+              <ul class="price-includes">
+                <li>✓ Dvě oblasti současně</li>
+                <li>✓ Výrazná časová úspora</li>
+                <li>✓ Konzultace & fotodokumentace</li>
+                <li>✓ Sledování výsledků</li>
+              </ul>
+              <button class="btn btn-primary" onclick="showPage('kontakt')">Objednat</button>
+            </div>
+            <div class="price-card">
+              <div class="price-card-header">
+                <h3>Konzultace</h3>
+                <span class="price-badge">Zdarma</span>
+              </div>
+              <div class="price-amount">0 Kč</div>
+              <div class="price-desc">Bezplatná konzultace a posouzení vhodnosti</div>
+              <ul class="price-includes">
+                <li>✓ Posouzení Vašich potřeb</li>
+                <li>✓ Vysvětlení procedury</li>
+                <li>✓ Odpovědi na otázky</li>
+                <li>✓ Bez závazků</li>
+              </ul>
+              <button class="btn btn-secondary" onclick="showPage('kontakt')">Objednat zdarma</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ostatní služby -->
+        <div class="price-section fade-in">
+          <div class="price-section-header">
+            <span class="price-icon">🌿</span>
+            <h2 class="price-section-title">Ostatní služby</h2>
+          </div>
+          <div class="other-prices-table">
+            <div class="other-price-row">
+              <span class="other-price-name">Konzultace výživa na buněčné úrovni</span>
+              <span class="other-price-amount">od 500 Kč</span>
+            </div>
+            <div class="other-price-row">
+              <span class="other-price-name">Reflexní terapie</span>
+              <span class="other-price-amount">od 600 Kč</span>
+            </div>
+            <div class="other-price-row">
+              <span class="other-price-name">Workshop MISP (Massage In Schools Programme)</span>
+              <span class="other-price-amount">dle domluvy</span>
+            </div>
+            <div class="other-price-row">
+              <span class="other-price-name">Koordinace událostí (svatby, narozeniny)</span>
+              <span class="other-price-amount">dle rozsahu</span>
+            </div>
+            <div class="other-price-row">
+              <span class="other-price-name">Lekce plavání těhotných</span>
+              <span class="other-price-amount">dle domluvy</span>
+            </div>
+            <div class="other-price-row">
+              <span class="other-price-name">Sportovní teambuilding</span>
+              <span class="other-price-amount">dle domluvy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-note fade-in">
+          <p>💡 Ceny jsou orientační. Pro přesnou nabídku nás kontaktujte. Dárkové poukazy na všechny naše služby jsou
+            samozřejmostí!</p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== PAGE: KONTAKT ===== -->
+  <div id="page-kontakt" class="page">
+    <section class="page-hero page-hero-small">
+      <div class="page-hero-content container">
+        <span class="section-tag tag-white">Jsme tu pro Vás</span>
+        <h1 class="page-hero-title">Kontakt</h1>
+        <p class="page-hero-sub">Rezervujte si lekci nebo se zeptejte na cokoliv</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Kontaktní info -->
+          <div class="contact-info fade-in">
+            <h2 class="contact-info-title">Navštivte nás</h2>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-detail">
+                <strong>Adresa</strong>
+                <p>Pražská 1081<br>286 01 Čáslav</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-detail">
+                <strong>Telefon</strong>
+                <a href="tel:+420776123456" class="contact-link">+420 776 123 456</a>
+                <p class="contact-note">Po–Pá: 8:00–20:00, So: 9:00–14:00</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-detail">
+                <strong>E-mail</strong>
+                <a href="mailto:info@absolutestudio.cz" class="contact-link">info@absolutestudio.cz</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📸</div>
+              <div class="contact-detail">
+                <strong>Sledujte nás</strong>
+                <div class="social-links">
+                  <a href="https://www.facebook.com" target="_blank" class="social-link">Facebook</a>
+                  <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.3978!2d15.3884!3d49.9095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c40c47e8935b1%3A0x408b9f1bfb48e9d6!2sPra%C5%BEsk%C3%A1%201081%2C%20286%2001%20%C4%8C%C3%A1slav!5e0!3m2!1scs!2scz!4v1690000000000!5m2!1scs!2scz"
+                width="100%" height="250" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="ABSOLUTE studio mapa">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Kontaktní formulář -->
+          <div class="contact-form-wrapper fade-in">
+            <h2 class="contact-form-title">Napište nám</h2>
+            <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Jméno *</label>
+                  <input type="text" id="fname" name="fname" required placeholder="Vaše jméno">
+                </div>
+                <div class="form-group">
+                  <label for="lname">Příjmení *</label>
+                  <input type="text" id="lname" name="lname" required placeholder="Vaše příjmení">
+                </div>
+              </div>
               <div class="form-group">
-                <label for="fname">Jméno *</label>
-                <input type="text" id="fname" name="fname" required placeholder="Vaše jméno">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required placeholder="vas@email.cz">
               </div>
               <div class="form-group">
-                <label for="lname">Příjmení *</label>
-                <input type="text" id="lname" name="lname" required placeholder="Vaše příjmení">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx">
               </div>
-            </div>
-            <div class="form-group">
-              <label for="email">E-mail *</label>
-              <input type="email" id="email" name="email" required placeholder="vas@email.cz">
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx">
-            </div>
-            <div class="form-group">
-              <label for="service">Mám zájem o</label>
-              <select id="service" name="service">
-                <option value="">Vyberte službu...</option>
-                <option value="ems">EMS trénink</option>
-                <option value="kryo">Kryolipolýza</option>
-                <option value="zdrav">Konzultace zdraví / výživa</option>
-                <option value="misp">Program MISP</option>
-                <option value="jine">Jiné</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Zpráva *</label>
-              <textarea id="message" name="message" required rows="5" placeholder="Napište nám Vaši otázku nebo požadavek..."></textarea>
-            </div>
-            <div class="form-group form-check">
-              <label class="checkbox-label">
-                <input type="checkbox" id="consent" required>
-                <span>Souhlasím se zpracováním osobních údajů pro účely odpovědi na dotaz.</span>
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Odeslat zprávu</button>
-            <div class="form-success" id="formSuccess" style="display:none">
-              ✓ Děkujeme za Vaši zprávu! Ozveme se Vám co nejdříve.
-            </div>
-          </form>
+              <div class="form-group">
+                <label for="service">Mám zájem o</label>
+                <select id="service" name="service">
+                  <option value="">Vyberte službu...</option>
+                  <option value="ems">EMS trénink</option>
+                  <option value="kryo">Kryolipolýza</option>
+                  <option value="zdrav">Konzultace zdraví / výživa</option>
+                  <option value="misp">Program MISP</option>
+                  <option value="jine">Jiné</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Zpráva *</label>
+                <textarea id="message" name="message" required rows="5"
+                  placeholder="Napište nám Vaši otázku nebo požadavek..."></textarea>
+              </div>
+              <div class="form-group form-check">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="consent" required>
+                  <span>Souhlasím se zpracováním osobních údajů pro účely odpovědi na dotaz.</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Odeslat zprávu</button>
+              <div class="form-success" id="formSuccess" style="display:none">
+                ✓ Děkujeme za Vaši zprávu! Ozveme se Vám co nejdříve.
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-absolute">ABSOLUTE</span>
-            <span class="logo-studio">studio</span>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-absolute">ABSOLUTE</span>
+              <span class="logo-studio">studio</span>
+            </div>
+            <p class="footer-tagline">Každý může být TVŮRCEM</p>
+            <p class="footer-address">Pražská 1081, 286 01 Čáslav</p>
           </div>
-          <p class="footer-tagline">Každý může být TVŮRCEM</p>
-          <p class="footer-address">Pražská 1081, 286 01 Čáslav</p>
-        </div>
-        <div class="footer-nav-col">
-          <h4 class="footer-nav-title">Navigace</h4>
-          <ul class="footer-nav">
-            <li><a href="#" onclick="showPage('uvod')">Úvod</a></li>
-            <li><a href="#" onclick="showPage('onas')">O nás / Tým</a></li>
-            <li><a href="#" onclick="showPage('lekce')">Lekce EMS</a></li>
-            <li><a href="#" onclick="showPage('kryo')">Kryolipolýza</a></li>
-          </ul>
-        </div>
-        <div class="footer-nav-col">
-          <h4 class="footer-nav-title">Více</h4>
-          <ul class="footer-nav">
-            <li><a href="#" onclick="showPage('zdravi')">Koncept zdraví</a></li>
-            <li><a href="#" onclick="showPage('misp')">MISP & Co</a></li>
-            <li><a href="#" onclick="showPage('cenik')">Ceník</a></li>
-            <li><a href="#" onclick="showPage('kontakt')">Kontakt</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact-col">
-          <h4 class="footer-nav-title">Kontakt</h4>
-          <p>📍 Pražská 1081, Čáslav</p>
-          <p>📞 <a href="tel:+420776123456">+420 776 123 456</a></p>
-          <p>✉️ <a href="mailto:info@absolutestudio.cz">info@absolutestudio.cz</a></p>
-          <div class="footer-social">
-            <a href="#" class="footer-social-link">FB</a>
-            <a href="#" class="footer-social-link">IG</a>
+          <div class="footer-nav-col">
+            <h4 class="footer-nav-title">Navigace</h4>
+            <ul class="footer-nav">
+              <li><a href="#" onclick="showPage('uvod')">Úvod</a></li>
+              <li><a href="#" onclick="showPage('onas')">O nás / Tým</a></li>
+              <li><a href="#" onclick="showPage('lekce')">Lekce EMS</a></li>
+              <li><a href="#" onclick="showPage('kryo')">Kryolipolýza</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4 class="footer-nav-title">Více</h4>
+            <ul class="footer-nav">
+              <li><a href="#" onclick="showPage('zdravi')">Koncept zdraví</a></li>
+              <li><a href="#" onclick="showPage('misp')">MISP & Co</a></li>
+              <li><a href="#" onclick="showPage('cenik')">Ceník</a></li>
+              <li><a href="#" onclick="showPage('kontakt')">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <h4 class="footer-nav-title">Kontakt</h4>
+            <p>📍 Pražská 1081, Čáslav</p>
+            <p>📞 <a href="tel:+420776123456">+420 776 123 456</a></p>
+            <p>✉️ <a href="mailto:info@absolutestudio.cz">info@absolutestudio.cz</a></p>
+            <div class="footer-social">
+              <a href="#" class="footer-social-link">FB</a>
+              <a href="#" class="footer-social-link">IG</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>© 2018–2025 ABSOLUTE studio · Pražská 1081, Čáslav · Všechna práva vyhrazena</p>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2018–2025 ABSOLUTE studio · Pražská 1081, Čáslav · Všechna práva vyhrazena</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
