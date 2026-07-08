@@ -60,5 +60,15 @@
             "destination": "/",
             "permanent": true
         }
+        {
+            "source": "/cenik",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/cenik/",
+            "destination": "/",
+            "permanent": true
+        }
     ]
 }
