@@ -1329,16 +1329,17 @@ input, textarea, select { font-family: inherit; }
   }
 }
 
-/* ===== BALANCE QUESTIONS + PRODUCTS (Koncept rovnováhy CTA) ===== */
+/* ===== BALANCE QUESTIONS + PRODUCTS (Koncept rovnováhy) ===== */
 .balance-questions {
-  max-width: 760px;
+  max-width: 820px;
   margin: 0 auto 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+  text-align: center;
 }
 .balance-questions p {
-  color: white;
+  color: var(--text-mid);
   font-family: var(--font-main);
   font-weight: 600;
   font-size: clamp(1rem, 2.4vw, 1.4rem);
@@ -1347,33 +1348,44 @@ input, textarea, select { font-family: inherit; }
 .balance-tagline {
   font-family: var(--font-main);
   font-weight: 800;
-  font-size: clamp(1.5rem, 4vw, 2.4rem);
-  color: white;
-  margin: 1.25rem 0 2.25rem;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  color: var(--primary);
+  text-align: center;
+  margin: 1.25rem 0 3rem;
   letter-spacing: 0.01em;
 }
 .balance-products {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
-.balance-products a {
-  display: block;
-  width: 210px;
-  background: white;
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  box-shadow: var(--shadow-md);
-  transition: transform var(--transition), box-shadow var(--transition);
+.balance-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 320px;
+  max-width: 100%;
+  transition: transform var(--transition);
 }
-.balance-products a:hover {
+.balance-product:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
 }
-.balance-products img {
+.balance-product img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius-sm);
+}
+.balance-caption {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.balance-product:hover .balance-caption {
+  color: var(--primary);
 }
