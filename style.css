@@ -1389,3 +1389,51 @@ input, textarea, select { font-family: inherit; }
 .balance-product:hover .balance-caption {
   color: var(--primary);
 }
+
+/* ===== DETAILED PRICE LIST (Ceník) ===== */
+.price-list {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.price-list-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.price-list-row:last-child { border-bottom: none; }
+.price-list-row.pl-highlight { background: var(--bg-light); }
+.pl-info { flex: 1; }
+.pl-title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.35;
+}
+.pl-detail { font-weight: 400; font-size: 0.88rem; color: var(--text-mid); }
+.pl-desc {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  font-style: italic;
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+.pl-price { text-align: right; white-space: nowrap; flex-shrink: 0; }
+.pl-amount {
+  display: block;
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+.pl-subamount { display: block; font-size: 0.8rem; color: var(--text-light); margin-top: 0.15rem; }
+@media (max-width: 480px) {
+  .price-list-row { padding: 1rem 1.1rem; gap: 0.75rem; }
+  .pl-amount { font-size: 1.1rem; }
+}
