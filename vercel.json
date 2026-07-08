@@ -1,0 +1,64 @@
+{
+    "redirects": [
+        {
+            "source": "/spolupracujeme",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/spolupracujeme/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/lekce",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/lekce/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/o-nas",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/o-nas/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/misp",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/misp/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/kontakt",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/kontakt/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/home",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/home/",
+            "destination": "/",
+            "permanent": true
+        }
+    ]
+}
