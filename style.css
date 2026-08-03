@@ -1037,8 +1037,11 @@ input, textarea, select { font-family: inherit; }
 }
 .brand-heart {
   color: var(--primary);
-  font-size: 1.05em;
-  line-height: 1;
+  width: 1.05em;
+  height: 1.05em;
+  display: inline-block;
+  vertical-align: -0.15em;
+  flex-shrink: 0;
 }
 .price-note-quote {
   margin-top: 0.75rem;
