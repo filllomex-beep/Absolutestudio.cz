@@ -17,6 +17,49 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HealthAndBeautyBusiness",
+        "@id": "https://www.absolutestudio.cz/#organization",
+        "name": "ABSOLUTE studio",
+        "url": "https://www.absolutestudio.cz/",
+        "logo": "https://www.absolutestudio.cz/logo.png",
+        "image": "https://www.absolutestudio.cz/logo.png",
+        "slogan": "Každý může být TVŮRCEM",
+        "telephone": "+420722509286",
+        "email": "absolutestudio@centrum.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pražská 1081",
+          "postalCode": "286 01",
+          "addressLocality": "Čáslav",
+          "addressCountry": "CZ"
+        },
+        "sameAs": [
+          "https://www.facebook.com/EMSCaslavAbsolutestudio"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.absolutestudio.cz/#website",
+        "url": "https://www.absolutestudio.cz/",
+        "name": "ABSOLUTE studio",
+        "inLanguage": "cs-CZ",
+        "publisher": { "@id": "https://www.absolutestudio.cz/#organization" },
+        "creator": {
+          "@type": "Organization",
+          "@id": "https://philoagency.com/#organization",
+          "name": "Philo Agency",
+          "url": "https://philoagency.com/"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -1747,6 +1790,9 @@
     <div class="footer-bottom">
       <div class="container">
         <p>© 2018–2026 ABSOLUTE studio · Pražská 1081, Čáslav · Všechna práva vyhrazena</p>
+        <p class="footer-credit">
+          Web vytvořila <a href="https://philoagency.com/" rel="noopener">Philo Agency</a>
+        </p>
       </div>
     </div>
   </footer>

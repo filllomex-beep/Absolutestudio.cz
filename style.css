@@ -1158,6 +1158,9 @@ input, textarea, select { font-family: inherit; }
   text-align: center;
 }
 .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+.footer-credit { margin-top: 0.4rem; }
+.footer-credit a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color var(--transition); }
+.footer-credit a:hover { color: var(--primary-light); }
 
 /* ===== FADE IN ANIMATIONS ===== */
 .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
